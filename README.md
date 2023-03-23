@@ -1,10 +1,7 @@
 <a name="readme-top"></a>
 
 <div align="center">
-  <img src="cover-image.png" alt="logo" height="100" width="auto" />
-  <br/>
-
-  <h3><b>Module 1 Portfolio</b></h3>
+  <h1><b>Module 1 Portfolio</b></h1>
   <br/>
 </div>
 
