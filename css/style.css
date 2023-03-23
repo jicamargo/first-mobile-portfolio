@@ -1,0 +1,75 @@
+.main-frame{
+  width: 375px;
+  /* background-color: #3C3A39; */
+  bottom: 0;
+}
+.Toolbar{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #3C3A39;
+  margin-top: 44px;
+  height: 48px;
+  padding: 0rem 1rem;
+}
+
+.Mylogo{
+  font-family: 'Roboto';
+  font-size:large;
+  color: aliceblue;
+}
+
+.burguer-menu{
+  color: aliceblue;
+  margin-right: 1rem;
+}
+
+.Headline{
+  display:flex;
+  flex-direction: column;
+  justify-content:flex-start;
+  padding: 1.5rem;
+  background-color:#1C1A19;
+  color:#FFF5E1
+}
+
+.Title1{
+  color: #FF6B00;
+  font-family: 'Crete Round';
+  font-style: normal;
+  padding-top: 5.6rem;
+  font-weight: 400;
+  font-size: 3.4rem;
+}
+
+.Title2{
+  padding-top: 0.3rem;
+  color: #FFF5E1;
+  font-family: 'Roboto';
+  font-style:normal;
+  font-weight:bold;
+  font-size: 1.5rem;
+}
+
+.Simpletext{
+  padding-top: 1rem;
+  color: #FFF5E1;
+  font-family: 'Poppins';
+  font-style:normal;
+  font-size: 1rem;
+}
+
+/* .fa{
+  text-decoration: none;
+} */
+.Socialmedia{
+  padding: 1.5rem 0rem 10rem  0rem;
+  font-size: 1.5rem;
+}
+
+.socialmediaicon{
+  padding: 0rem 0.5rem;
+}
+/* @media screen {
+  min-width: 768;
+} */
