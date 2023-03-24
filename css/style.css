@@ -1,25 +1,45 @@
-/**************** mobile version - mobile fisrt design ***************/
+/**************** variables and general settings ***************/
+
+:root {
+  --color-font-menu: #fff5e1;
+  --color-font-menu-selected: #f7f6f5;
+  --color-font-title1: #ff6b00;
+  --color-font-title2: #fff5e1;
+  --color-font-text1: #fff5e1;
+  --color-back-bars: #3c3a39;
+  --color-back-content1: #1c1a19;
+  --font-toolbar: 'Roboto', serif;
+  --font-title1: 'Crete Round', serif;
+  --font-title2: 'Roboto', serif;
+  --font-text1: 'Poppins', serif;
+  --transition-transform: transform 0.7s ease;
+  --transition-font: font-size 0.7s ease;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  background-color: #1c1a19;
+  background-color: var(--color-back-content1);
 }
+
+/**************** mobile version - mobile fisrt design ***************/
 
 .Toolbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #3c3a39;
+  background-color: var(--color-back-bars);
   height: 48px;
   padding-right: 1rem;
-  font-family: 'Roboto', serif;
-  color: #fff5e1;
+  font-family: var(--font-toolbar);
+  color: var(--color-font-menu);
 }
 
 .Mylogo {
   font-size: large;
-  background-color: #3c3a39;
+  padding-left: 1.5rem;
+  background-color: var(--color-back-bars);
 }
 
 .menu-pc {
@@ -27,17 +47,17 @@
 }
 
 .menu-mobile {
-  background-color: #3c3a39;
+  background-color: var(--color-back-bars);
 }
 
 .burguer-menu {
   margin-right: 1rem;
-  background-color: #3c3a39;
+  background-color: var(--color-back-bars);
 }
 
 .main-frame {
   display: flex;
-  background-color: #1c1a19;
+  background-color: var(--color-back-content1);
   bottom: 0;
 }
 
@@ -60,8 +80,8 @@
 }
 
 .Title1 {
-  color: #ff6b00;
-  font-family: 'Crete Round', serif;
+  color: var(--color-font-title1);
+  font-family: var(--font-title);
   font-style: normal;
   padding-top: 5.6rem;
   font-weight: 400;
@@ -70,8 +90,8 @@
 
 .Title2 {
   padding-top: 0.3rem;
-  color: #fff5e1;
-  font-family: 'Roboto', serif;
+  color: var(--color-font-title2);
+  font-family: var(--font-title2);
   font-style: normal;
   font-weight: bold;
   font-size: 1.5rem;
@@ -79,8 +99,8 @@
 
 .Simpletext {
   padding: 1rem;
-  color: #fff5e1;
-  font-family: 'Poppins', serif;
+  color: var(--color-font-text1);
+  font-family: var(--font-text1);
   font-style: normal;
   font-size: 1rem;
 }
@@ -100,11 +120,12 @@
 
 .socialmediaicon:hover {
   transform: translateY(-0.3rem);
+  transition: var(--transition-transform);
 }
 
 .burguer-menu:hover {
   transform: translateY(-0.1rem);
-  background-color: #1c1a19;
+  transition: var(--transition-transform);
 }
 
 /****************** media queries (375px) medium size version *********************/
@@ -138,35 +159,38 @@
   .menu-pc {
     display: flex;
     font-size: small;
-    color: #fff5e1;
+    color: var(--color-font-menu);
     justify-content: flex-end;
     align-items: center;
     padding-right: 5rem;
-    background-color: #3c3a39;
+    background-color: var(--color-back-bars);
     order: 3;
   }
 
   .item-menu-pc {
     padding: 0 1rem 0 1rem;
-    background-color: #3c3a39;
+    background-color: var(--color-back-bars);
   }
 
   .item-menu-pc-icon {
     padding: 0;
-    background-color: #3c3a39;
+    background-color: var(--color-back-bars);
   }
 
   .item-menu-pc:hover {
     transform: translateY(-0.2rem);
+    transition: var(--transition-transform);
     font-size: larger;
     font-weight: bold;
-    color: #f7f6f5;
+    color: var(--color-font-menu-selected);
+    transition: var(--transition-font);
   }
 
   .item-menu-pc-icon:hover {
     transform: translateY(-0.2rem);
+    transition: var(--transition-transform);
     font-weight: bold;
-    color: #f7f6f5;
+    color: var(--color-font-menu-selected);
   }
 
   .content1 {
@@ -201,9 +225,10 @@
 
   .socialmediaicon:hover {
     transform: translateX(0.5rem);
+    transition: var(--transition-transform);
     font-size: larger;
     font-weight: bold;
-    color: #f7f6f5;
+    color: var(--color-font-menu-selected);
   }
 
   .bgimg {
