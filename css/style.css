@@ -87,7 +87,7 @@
 
 .Socialmedia {
   display: flex;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   padding: 1rem 0.5rem 12rem  1rem;
   margin-left: 1.5rem;
 }
@@ -145,7 +145,7 @@
     background-color: #3c3a39;
     order: 3;
   }
- 
+
   .item-menu-pc {
     padding: 0 1rem 0 1rem;
     background-color: #3c3a39;
@@ -185,7 +185,7 @@
   .Simpletext {
     font-size: 1.3rem;
   }
-  
+ 
   .Socialmedia {
     flex-direction: column;
     align-self: stretch;
