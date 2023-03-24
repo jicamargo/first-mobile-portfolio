@@ -3,36 +3,52 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio</title>
+  <title>JIC Portfolio</title>
 
-  <link rel="stylesheet" href="css/font-awesome.min.css">
 	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,700|Poppins" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Crete+Round:ital@0;1&family=Roboto:wght@100;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+  <section class="Toolbar">
+    <h1 class="Mylogo">JIC Software</h1>
+    <div class="menu-pc">
+      <a class="item-menu-pc">Portfolio</a>
+      <a class="item-menu-pc">About</a>
+      <a class="item-menu-pc-group">
+        <a class="item-menu-pc">Contact</a>
+        <span class="material-symbols-outlined item-menu-pc-icon">
+          mail
+        </span>
+      </a>
+    </div>
+    <div class="menu-mobile">
+      <span class="material-symbols-outlined burguer-menu">
+        menu
+      </span>
+    </div>
+  </section>
   <div class="main-frame">
-    <section class="Toolbar">
-      <h1 class="Mylogo">My Logo</h1>
-      <div class="burguer-menu" >
-        <i class="fa fa fa-bars"></i>
-      </div>
-    </section>
-
-    <section class="Headline">
-      <div class="Primarytext Title1">Hey There.<br>I'm Jorge.</div>
-      <div class="Supportingtext Title2">I'm a Software Developer</div>
-      <div class="Descriptiontext Simpletext">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
-        don’t hesitate to contact me.</div>
+    <div class="content1">
+      <section class="Headline">
+        <div class="Primarytext Title1">Hey There.<br>I'm Jorge.</div>
+        <div class="Supportingtext Title2">I'm a Software Developer</div>
+        <div class="Descriptiontext Simpletext">I can help you build a product , feature or website Look through some of my work and experience! If you like what you see and have a project you need coded, 
+          don’t hesitate to contact me.</div>
+      </section>
       <div class="Socialmedia">
-        <i class="fa fa-github socialmediaicon"></i>
-        <i class="fa fa-linkedin socialmediaicon"></i>
-        <i class="fa fa-facebook socialmediaicon"></i>
-        <i class="fa fa-twitter"></i>
-        <i class="fa fa-instagram socialmediaicon"></i>
+        <img class="socialmediaicon" src="images/icon1.png" alt="">
+        <img class="socialmediaicon" src="images/icon2.png" alt="">
+        <img class="socialmediaicon" src="images/icon3.png" alt="">
+        <img class="socialmediaicon" src="images/icon4.png" alt="">
+        <img class="socialmediaicon" src="images/icon5.png" alt="">
       </div>
-    </section>
+    </div>
+    <div class="bgimg">
+      <img src="../images/background.png" alt="">
+    </div>
   </div>
 </body>
 </html>
