@@ -179,11 +179,10 @@
 
   .item-menu-pc:hover {
     transform: translateY(-0.2rem);
-    transition: var(--transition-transform);
+    transition: var(--transition-transform), var(--transition-font);
     font-size: larger;
     font-weight: bold;
     color: var(--color-font-menu-selected);
-    transition: var(--transition-font);
   }
 
   .item-menu-pc-icon:hover {
