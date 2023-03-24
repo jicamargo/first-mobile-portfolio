@@ -22,7 +22,7 @@
   background-color: #3c3a39;
 }
 
-.menu-pc{
+.menu-pc {
   display: none;
 }
 
@@ -36,7 +36,7 @@
 }
 
 .main-frame {
-  display: flex; 
+  display: flex;
   background-color: #1c1a19;
   bottom: 0;
 }
@@ -49,7 +49,7 @@
 
 .bgimg {
   overflow: hidden;
-  max-width: 50%; 
+  max-width: 50%;
   margin-right: 0%;
   margin-left: 0%;
   margin-top: 50%;
@@ -60,7 +60,7 @@
 }
 
 .Title1 {
-  color: #FF6B00;
+  color: #ff6b00;
   font-family: 'Crete Round', serif;
   font-style: normal;
   padding-top: 5.6rem;
@@ -87,13 +87,13 @@
 
 .Socialmedia {
   display: flex;
-  justify-content: flex-start;  
+  justify-content: flex-start; 
   padding: 1rem 0.5rem 12rem  1rem;
-  margin-left: 1.5rem; 
+  margin-left: 1.5rem;
 }
 
 .socialmediaicon {
-  padding-right: 0rem 0.5rem;
+  padding-right: 0.5rem;
   height: 1.3rem;
   width: auto;
 }
@@ -107,8 +107,7 @@
   background-color: #1c1a19;
 }
 
-/*************************   media queries *******************************/
-/****************** tablet (375) medium size version *********************/
+/****************** media queries (375px) medium size version *********************/
 @media (min-width: 375px) {
   .Title1 {
     padding-top: 5.6rem;
@@ -117,7 +116,7 @@
   }
 
   .bgimg {
-    max-width: 100%; 
+    max-width: 100%;
     margin-right: 0%;
     margin-left: 0%;
     margin-top: 0%;
@@ -126,7 +125,7 @@
   .content1 {
     width: auto;
   }
-} 
+}
 
 /********************** End Medium Size Version **************/
 
@@ -146,7 +145,7 @@
     background-color: #3c3a39;
     order: 3;
   }
-  
+ 
   .item-menu-pc {
     padding: 0 1rem 0 1rem;
     background-color: #3c3a39;
@@ -169,20 +168,20 @@
     font-weight: bold;
     color: #f7f6f5;
   }
- 
+
   .content1 {
     flex-direction: row;
-    width:auto;
+    width: auto;
   }
 
   .Title1 {
     font-size: 4rem;
   }
-  
+
   .Title2 {
-    font-size: 2.5rem; 
+    font-size: 2.5rem;
   }
-  
+
   .Simpletext {
     font-size: 1.3rem;
   }
@@ -197,19 +196,19 @@
 
   .socialmediaicon {
     height: 1.5rem;
-    padding: 0.5rem;    
+    padding: 0.5rem;
   }
-  
+
   .socialmediaicon:hover {
     transform: translateX(0.5rem);
     font-size: larger;
     font-weight: bold;
     color: #f7f6f5;
-  } 
+  }
 
   .bgimg {
-    max-width: 100%; 
-    min-width:fit-content;
+    max-width: 100%;
+    min-width: fit-content;
     margin-right: 0%;
     margin-left: 0%;
     margin-top: 0%;
