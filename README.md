@@ -12,7 +12,6 @@
 - [📖 About the project ](#-about-the-project-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
-  - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
   - [👥 Authors ](#-authors-)
   - [🤝 Contributing ](#-contributing-)
@@ -33,17 +32,12 @@ This is a portfolio site, applying "fisrt mobile" design, workflow in GitHub, pu
 
 > Use HTML and CSS.
 
-<!-- LIVE DEMO -->
-## 🚀 Live Demo <a name="live-demo"></a>
-
-> there's no live demo yet.
-
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> You can follow the Microverse repo's to learn more about this topics
+> You can prove different screen sizes to see responsive design working 
 
 <!-- AUTHORS -->
 ## 👥 Authors <a name="authors"></a>
@@ -69,7 +63,6 @@ Give a ⭐️ if you like this project!
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
 - Microverse Team
-- All my fellow micronauts
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
