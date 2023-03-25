@@ -1,4 +1,4 @@
-/**************** variables and general settings ***************/
+/* *************** variables and general settings ************** */
 :root {
   --color-font-menu: #fff5e1;
   --color-font-menu-selected: #f7f6f5;
@@ -21,7 +21,7 @@
   box-sizing: content-box;
 }
 
-/**************** mobile version - mobile fisrt design ***************/
+/* *************** mobile version - mobile fisrt design ************** */
 
 .Toolbar {
   display: flex;
@@ -125,7 +125,8 @@
   transition: var(--transition-transform);
 }
 
-/****************** media queries medium size version (375px)*********************/
+/* ***************** media queries medium size version (375px) ****************** */
+
 @media (min-width: 375px) {
   .content1 {
     width: auto;
@@ -137,7 +138,8 @@
   }
 }
 
-/*********************** desktop version (768px) ***********************/
+/* ********************** desktop version (768px) ********************** */
+
 @media (min-width: 768px) {
   .menu-mobile {
     display: none;
@@ -222,4 +224,4 @@
   }
 }
 
-/*********************** end of desktop version ***********************/
+/* ********************** end of desktop version ********************** */
