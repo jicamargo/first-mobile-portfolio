@@ -125,19 +125,6 @@
   transition: var(--transition-transform);
 }
 
-/* ***************** media queries medium size version (375px) ****************** */
-
-@media (min-width: 375px) {
-  .content1 {
-    width: auto;
-    background-position: top -2.5rem right -10rem;
-  }
-
-  .Headline {
-    padding-right: 10rem;
-  }
-}
-
 /* ********************** desktop version (768px) ********************** */
 
 @media (min-width: 768px) {
