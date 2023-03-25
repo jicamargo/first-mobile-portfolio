@@ -64,7 +64,7 @@
 .content1 {
   display: flex;
   flex-direction: column;
-  background-image: url("../images/background.png") ;
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-position: bottom -4rem right -11.5rem;
   overflow: hidden;
@@ -125,7 +125,7 @@
   transition: var(--transition-transform);
 }
 
-/****************** media queries (375px) medium size version *********************/
+/****************** media queries medium size version (375px)*********************/
 @media (min-width: 375px) {
   .content1 {
     width: auto;
@@ -134,12 +134,10 @@
 
   .Headline {
     padding-right: 10rem;
-  } 
+  }
 }
 
-/********************** End Medium Size Version **************/
-
-/*********************** desktop version ***********************/
+/*********************** desktop version (768px) ***********************/
 @media (min-width: 768px) {
   .menu-mobile {
     display: none;
@@ -184,7 +182,7 @@
   .Headline {
     padding-right: 22rem;
   }
-  
+
   .content1 {
     flex-direction: row;
     background-position: top -2.5rem right;
