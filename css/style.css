@@ -7,7 +7,7 @@
   --color-font-text1: #fff5e1;
   --color-back-bars: #3c3a39;
   --color-back-content1: #1c1a19;
-  --font-toolbar: 'Roboto', serif;
+  --font-toolbar: 'Inter', serif;
   --font-title1: 'Crete Round', serif;
   --font-title2: 'Roboto', serif;
   --font-text1: 'Poppins', serif;
@@ -19,7 +19,6 @@
   margin: 0;
   padding: 0;
   box-sizing: content-box;
-  background-color: var(--color-back-content1);
 }
 
 /**************** mobile version - mobile fisrt design ***************/
@@ -65,48 +64,39 @@
 .content1 {
   display: flex;
   flex-direction: column;
-  width: min-content+10%;
-}
-
-.bgimg {
-  background: url('../images/background.png') no-repeat;
-  background-size: 230%;
-  background-position-y: 70%;
+  background-image: url("../images/background.png") ;
+  background-repeat: no-repeat;
+  background-position: bottom -4rem right -11.5rem;
   overflow: hidden;
-  width: 30rem;
-  margin-right: 0%;
-  margin-left: -20%;
 }
 
 .Headline {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .Title1 {
   color: var(--color-font-title1);
-  font-family: var(--font-title);
-  font-style: normal;
-  padding-top: 5.6rem;
-  font-weight: 400;
-  font-size: 2rem;
+  font-family: var(--font-title1);
+  padding-top: 6.5rem;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 105%;
 }
 
 .Title2 {
-  padding-top: 0.3rem;
+  padding-top: 0.7rem;
   color: var(--color-font-title2);
   font-family: var(--font-title2);
-  font-style: normal;
-  font-weight: bold;
-  font-size: 0.8rem;
+  font-size: 1.3rem;
 }
 
 .Simpletext {
-  padding: 1rem 0;
+  padding-top: 0.7rem;
   color: var(--color-font-text1);
   font-family: var(--font-text1);
   font-style: normal;
-  font-size: 0.7rem;
+  font-size: 0.85rem;
 }
 
 .iconlist {
@@ -116,12 +106,11 @@
 .Socialmedia {
   display: flex;
   justify-content: flex-start;
-  padding: 1rem 0.5rem 12rem 0;
-  margin-left: 1.5rem;
+  padding: 1rem 0 12rem 1rem;
 }
 
 .socialmediaicon {
-  padding-right: 0.5rem;
+  margin-left: 1rem;
   height: 1rem;
   width: auto;
 }
@@ -140,21 +129,12 @@
 @media (min-width: 375px) {
   .content1 {
     width: auto;
+    background-position: top -2.5rem right -10rem;
   }
 
-  .Title1 {
-    padding-top: 5.6rem;
-    font-weight: 400;
-    font-size: 3.4rem;
-  }
-
-  .bgimg {
-    background-size: 200%;
-    background-position-y: 0%;
-    width: 20rem;
-    margin-right: 0%;
-    margin-left: 0%;
-  }
+  .Headline {
+    padding-right: 10rem;
+  } 
 }
 
 /********************** End Medium Size Version **************/
@@ -182,7 +162,6 @@
   }
 
   .item-menu-pc-icon {
-    padding: 0;
     background-color: var(--color-back-bars);
     height: 1rem;
   }
@@ -203,24 +182,24 @@
   }
 
   .Headline {
-    width: 50%;
+    padding-right: 22rem;
   }
-
+  
   .content1 {
     flex-direction: row;
-    width: auto;
+    background-position: top -2.5rem right;
   }
 
   .Title1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
 
   .Title2 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
 
   .Simpletext {
-    font-size: 1rem;
+    font-size: 0.8rem;
     padding-bottom: 10rem;
   }
 
@@ -229,11 +208,10 @@
     align-self: stretch;
     order: -1;
     justify-content: center;
-    padding: 1.5rem 1rem 2rem 1rem;
+    padding: 1.5rem 0 2rem 0;
   }
 
   .socialmediaicon {
-    height: 1.5rem;
     padding: 0.5rem;
   }
 
@@ -243,15 +221,6 @@
     font-size: larger;
     font-weight: bold;
     color: var(--color-font-menu-selected);
-  }
-
-  .bgimg {
-    background-size: 100%;
-    background-position-y: 0%;
-    width: 30rem;
-    height: auto;
-    margin-right: 0%;
-    margin-left: -40%;
   }
 }
 
