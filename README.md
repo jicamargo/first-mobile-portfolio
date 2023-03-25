@@ -9,7 +9,7 @@
 <!-- TABLE OF CONTENTS -->
 # 📗 Table of Contents
 
-- [� Table of Contents](#-table-of-contents)
+- [📗 Table of Contents](#-table-of-contents)
 - [📖 Portfolio ](#-portfolio-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
@@ -41,7 +41,8 @@
 <details>
   <summary>Client</summary>
   <ul>
-    <li>Modern Web Browser (Mozilla, Chrome, Edge)</li>
+    <li>HTML</li>
+    <li>CSS</li>
   </ul>
 </details>
 
