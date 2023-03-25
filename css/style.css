@@ -64,7 +64,7 @@
 .content1 {
   display: flex;
   flex-direction: column;
-  background-image: url("../images/background.png") ;
+  background-image: url("../images/background.png");
   background-repeat: no-repeat;
   background-position: bottom -4rem right -11.5rem;
   overflow: hidden;
@@ -134,7 +134,7 @@
 
   .Headline {
     padding-right: 10rem;
-  } 
+  }
 }
 
 /********************** End Medium Size Version **************/
@@ -184,7 +184,7 @@
   .Headline {
     padding-right: 22rem;
   }
-  
+
   .content1 {
     flex-direction: row;
     background-position: top -2.5rem right;
