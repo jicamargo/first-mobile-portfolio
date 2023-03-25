@@ -1,5 +1,4 @@
 /**************** variables and general settings ***************/
-
 :root {
   --color-font-menu: #fff5e1;
   --color-font-menu-selected: #f7f6f5;
@@ -40,6 +39,7 @@
   font-size: large;
   padding-left: 1.5rem;
   background-color: var(--color-back-bars);
+  text-decoration: none;
 }
 
 .menu-pc {
@@ -53,6 +53,7 @@
 .burguer-menu {
   margin-right: 1rem;
   background-color: var(--color-back-bars);
+  height: 1rem;
 }
 
 .main-frame {
@@ -68,15 +69,18 @@
 }
 
 .bgimg {
+  background: url('../images/background.png') no-repeat;
+  background-size: 230%;
+  background-position-y: 70%;
   overflow: hidden;
-  max-width: 50%;
+  width: 30rem;
   margin-right: 0%;
-  margin-left: 0%;
-  margin-top: 50%;
+  margin-left: -20%;
 }
 
 .Headline {
-  padding-left: 1.5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .Title1 {
@@ -85,7 +89,7 @@
   font-style: normal;
   padding-top: 5.6rem;
   font-weight: 400;
-  font-size: 2.4rem;
+  font-size: 2rem;
 }
 
 .Title2 {
@@ -94,27 +98,31 @@
   font-family: var(--font-title2);
   font-style: normal;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 0.8rem;
 }
 
 .Simpletext {
-  padding: 1rem;
+  padding: 1rem 0;
   color: var(--color-font-text1);
   font-family: var(--font-text1);
   font-style: normal;
-  font-size: 1rem;
+  font-size: 0.7rem;
+}
+
+.iconlist{
+  list-style: none;
 }
 
 .Socialmedia {
   display: flex;
   justify-content: flex-start;
-  padding: 1rem 0.5rem 12rem  1rem;
+  padding: 1rem 0.5rem 12rem 0rem;
   margin-left: 1.5rem;
 }
 
 .socialmediaicon {
   padding-right: 0.5rem;
-  height: 1.3rem;
+  height: 1rem;
   width: auto;
 }
 
@@ -130,6 +138,10 @@
 
 /****************** media queries (375px) medium size version *********************/
 @media (min-width: 375px) {
+  .content1 {
+     width: auto;
+   }
+
   .Title1 {
     padding-top: 5.6rem;
     font-weight: 400;
@@ -137,14 +149,11 @@
   }
 
   .bgimg {
-    max-width: 100%;
+    background-size: 200%;
+    background-position-y: 0%;
+    width: 20rem;
     margin-right: 0%;
     margin-left: 0%;
-    margin-top: 0%;
-  }
-
-  .content1 {
-    width: auto;
   }
 }
 
@@ -175,6 +184,7 @@
   .item-menu-pc-icon {
     padding: 0;
     background-color: var(--color-back-bars);
+    height: 1rem;
   }
 
   .item-menu-pc:hover {
@@ -192,21 +202,25 @@
     color: var(--color-font-menu-selected);
   }
 
+  .Headline {
+    width: 50%;
+  }
   .content1 {
     flex-direction: row;
     width: auto;
   }
 
   .Title1 {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .Title2 {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
 
   .Simpletext {
-    font-size: 1.3rem;
+    font-size: 1rem;
+    padding-bottom: 10rem;
   }
 
   .Socialmedia {
@@ -231,11 +245,12 @@
   }
 
   .bgimg {
-    max-width: 100%;
-    min-width: fit-content;
+    background-size: 100%;
+    background-position-y: 0%;
+    width: 30rem;
+    height: auto;
     margin-right: 0%;
-    margin-left: 0%;
-    margin-top: 0%;
+    margin-left: -40%;
   }
 }
 
