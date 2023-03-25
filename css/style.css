@@ -8,7 +8,6 @@
   --color-back-bars: #3c3a39;
   --color-back-content1: #1c1a19;
   --font-toolbar: 'Inter', serif;
-  --font-toolbar: 'Inter', serif;
   --font-title1: 'Crete Round', serif;
   --font-title2: 'Roboto', serif;
   --font-text1: 'Poppins', serif;
@@ -65,13 +64,9 @@
 .content1 {
   display: flex;
   flex-direction: column;
-  width: min-content+10%;
-}
-
-.bgimg {
-  background: url('../images/background.png') no-repeat;
-  background-size: 230%;
-  background-position-y: 70%;
+  background-image: url("../images/background.png") ;
+  background-repeat: no-repeat;
+  background-position: bottom -4rem right -11.5rem;
   overflow: hidden;
 }
 
@@ -137,19 +132,9 @@
     background-position: top -2.5rem right -10rem;
   }
 
-  .Title1 {
-    padding-top: 5.6rem;
-    font-weight: 400;
-    font-size: 3.4rem;
-  }
-
-  .bgimg {
-    background-size: 200%;
-    background-position-y: 0%;
-    width: 20rem;
-    margin-right: 0%;
-    margin-left: 0%;
-  }
+  .Headline {
+    padding-right: 10rem;
+  } 
 }
 
 /********************** End Medium Size Version **************/
