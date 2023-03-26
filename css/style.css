@@ -64,9 +64,10 @@
 .content1 {
   display: flex;
   flex-direction: column;
-  background-image: url("../images/background.png");
+  background-image: url("../images/background-mobile.png");
   background-repeat: no-repeat;
-  background-position: bottom -4rem right -11.5rem;
+  background-size: contain;
+  background-position: bottom -7.5rem right;
   overflow: hidden;
 }
 
@@ -106,7 +107,7 @@
 .Socialmedia {
   display: flex;
   justify-content: flex-start;
-  padding: 1rem 0 12rem 1rem;
+  padding: 1rem 0 8.5rem 1rem;
 }
 
 .socialmediaicon {
@@ -174,7 +175,11 @@
 
   .content1 {
     flex-direction: row;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     background-position: top -2.5rem right;
+    overflow: hidden;
   }
 
   .Title1 {
