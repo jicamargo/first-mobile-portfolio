@@ -56,7 +56,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link] (Cooming soon!)
+(https://jicamargo.github.io/first-mobile-portfolio/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
