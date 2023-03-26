@@ -1,0 +1,219 @@
+/* *************** variables and general settings ************** */
+:root {
+  --color-font-menu: #fff5e1;
+  --color-font-menu-selected: #f7f6f5;
+  --color-font-title1: #ff6b00;
+  --color-font-title2: #fff5e1;
+  --color-font-text1: #fff5e1;
+  --color-back-bars: #3c3a39;
+  --color-back-content1: #1c1a19;
+  --font-toolbar: 'Inter', serif;
+  --font-title1: 'Crete Round', serif;
+  --font-title2: 'Roboto', serif;
+  --font-text1: 'Poppins', serif;
+  --transition-transform: transform 0.7s ease;
+  --transition-font: font-size 0.7s ease;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: content-box;
+}
+
+/* *************** mobile version - mobile fisrt design ************** */
+
+.Toolbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-back-bars);
+  height: 48px;
+  padding-right: 1rem;
+  font-family: var(--font-toolbar);
+  color: var(--color-font-menu);
+}
+
+.Mylogo {
+  font-size: large;
+  padding-left: 1.5rem;
+  background-color: var(--color-back-bars);
+  text-decoration: none;
+}
+
+.menu-pc {
+  display: none;
+}
+
+.menu-mobile {
+  background-color: var(--color-back-bars);
+}
+
+.burguer-menu {
+  margin-right: 1rem;
+  background-color: var(--color-back-bars);
+  height: 1rem;
+}
+
+.main-frame {
+  display: flex;
+  background-color: var(--color-back-content1);
+  bottom: 0;
+}
+
+.content1 {
+  display: flex;
+  flex-direction: column;
+  background-image: url("../images/background-mobile.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom -7.5rem right;
+  overflow: hidden;
+}
+
+.Headline {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.Title1 {
+  color: var(--color-font-title1);
+  font-family: var(--font-title1);
+  padding-top: 6.5rem;
+  font-size: 3rem;
+  font-weight: 300;
+  line-height: 105%;
+}
+
+.Title2 {
+  padding-top: 0.7rem;
+  color: var(--color-font-title2);
+  font-family: var(--font-title2);
+  font-size: 1.3rem;
+}
+
+.Simpletext {
+  padding-top: 0.7rem;
+  color: var(--color-font-text1);
+  font-family: var(--font-text1);
+  font-style: normal;
+  font-size: 0.85rem;
+}
+
+.iconlist {
+  list-style: none;
+}
+
+.Socialmedia {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1rem 0 8.5rem 1rem;
+}
+
+.socialmediaicon {
+  margin-left: 1rem;
+  height: 1rem;
+  width: auto;
+}
+
+.socialmediaicon:hover {
+  transform: translateY(-0.3rem);
+  transition: var(--transition-transform);
+}
+
+.burguer-menu:hover {
+  transform: translateY(-0.1rem);
+  transition: var(--transition-transform);
+}
+
+/* ********************** desktop version (768px) ********************** */
+
+@media (min-width: 768px) {
+  .menu-mobile {
+    display: none;
+  }
+
+  .menu-pc {
+    display: flex;
+    font-size: small;
+    color: var(--color-font-menu);
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 5rem;
+    background-color: var(--color-back-bars);
+    order: 3;
+  }
+
+  .item-menu-pc {
+    padding: 0 1rem 0 1rem;
+    background-color: var(--color-back-bars);
+  }
+
+  .item-menu-pc-icon {
+    background-color: var(--color-back-bars);
+    height: 1rem;
+  }
+
+  .item-menu-pc:hover {
+    transform: translateY(-0.2rem);
+    transition: var(--transition-transform), var(--transition-font);
+    font-size: larger;
+    font-weight: bold;
+    color: var(--color-font-menu-selected);
+  }
+
+  .item-menu-pc-icon:hover {
+    transform: translateY(-0.2rem);
+    transition: var(--transition-transform);
+    font-weight: bold;
+    color: var(--color-font-menu-selected);
+  }
+
+  .Headline {
+    padding-right: 22rem;
+  }
+
+  .content1 {
+    flex-direction: row;
+    background-image: url("../images/background.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top -2.5rem right;
+    overflow: hidden;
+  }
+
+  .Title1 {
+    font-size: 2.5rem;
+  }
+
+  .Title2 {
+    font-size: 1.2rem;
+  }
+
+  .Simpletext {
+    font-size: 0.8rem;
+    padding-bottom: 10rem;
+  }
+
+  .Socialmedia {
+    flex-direction: column;
+    align-self: stretch;
+    order: -1;
+    justify-content: center;
+    padding: 1.5rem 0 2rem 0;
+  }
+
+  .socialmediaicon {
+    padding: 0.5rem;
+  }
+
+  .socialmediaicon:hover {
+    transform: translateX(0.5rem);
+    transition: var(--transition-transform);
+    font-size: larger;
+    font-weight: bold;
+    color: var(--color-font-menu-selected);
+  }
+}
+
+/* ********************** end of desktop version ********************** */
