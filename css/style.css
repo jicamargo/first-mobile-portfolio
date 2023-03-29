@@ -13,19 +13,30 @@
   --font-title1: 'Crete Round', serif;
   --font-title2: 'Roboto', serif;
   --font-text1: 'Poppins', serif;
-  --color-font-title1_card: #fff5e1;
-  --color-font-title2_card: #fff5e1;
-  --color-font-text1_card: #fff5e1;
+  --color-font-title1_card: #ffffff;
+  --color-font-title2_card: #ffffff;
+  --color-font-text1_card: #ffffff;
   --color-background_clear: white;
-  --color-back-btn-card: rgba(49, 42, 42, 0.5);
+  --color-line-div: #212121;
+  --color-back-btn-card: rgba(255, 255, 255, 0.24);
+  --color-main-card-title: #091e42;
+  --color-main-card-text: #091e42;
+  --font-card-title: 'Crete Round', serif;
+  --font-card-text: 'Inter', serif;
+  --font-color-about: #f4f5f7;
   --transition-transform: transform 0.7s ease;
   --transition-font: font-size 0.7s ease;
+  --card-gradient: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+  --color-font-contactme-text: #172b4d;
+  --color-background-clear: #e5e5e5;
+  --color-background-textarea: #FBF8F7;
+  --color-line-div-clear: #dfe1e6;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 /* *************** mobile version - mobile fisrt design ************** */
@@ -33,7 +44,7 @@
 .Toolbar {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; 
   background-color: var(--color-back-bars);
   height: 48px;
   padding-right: 1rem;
@@ -228,19 +239,29 @@
 
 /* ********************** end of desktop version ********************** */
 
-/*  ******** PAGES 2 AND 3 ****** */
+/*  ******** Recent Works Section ****** */
 
-.works_main {
-  padding: 8.13rem 1rem;
+.RecentWorks {
+  padding: 7.5rem 1.5rem;
   background-color: var(--color-background_clear);
 }
 
-.works_title {
+.RecentWorksSection {
   background-color: var(--color-background_clear);
-  display: flex;
-  flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;;
   margin-bottom: 3.25rem;
   text-align: center;
+  border-bottom: 1px solid var(--color-line-div);  
+}
+
+.Title_MyRecentWorks {
+  font-family: var(--font-title1);
+  font-weight: lighter;
+  color: var(--color-font-title2-dark);
+  background-color: var(--color-background_clear);
+  font-size: 2.5rem;
+  line-height: 3.25rem;
 }
 
 .line_div {
@@ -250,155 +271,62 @@
   margin: 4rem auto;
 }
 
+/*************** Grid layout for  project cards ********************/
+
 .grid_works {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(327px, 1fr));
-  grid-gap: 2rem;
-}
-
-.main_card_work {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  margin-bottom: 2.8rem;
-}
-
-.card_cnt {
-  display: flex;
-  flex-direction: column-reverse;
-  background-size: cover;
-  min-height: 400px;
-  max-height: 425px;
-}
-
-.work_img {
-  width: 100%;
-  margin-bottom: 2rem;
-}
-
-.main_card {
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  order: 1;
-  margin: 0 auto;
-}
-
-.work-1 {
-  background: url("../images/img-ph1.png") no-repeat center;
-}
-
-.work-2 {
-  background: url("../images/img-ph2.png") no-repeat center;
-}
-
-.work-3 {
-  background: url("../images/img-ph3.png") no-repeat center;
-}
-
-.work-4 {
-  background: url("../images/img-ph2.png") no-repeat center;
-}
-
-.work-5 {
-  background: url("../images/img-ph3.png") no-repeat center;
-}
-
-.work-6 {
-  background: url("../images/img-ph2.png") no-repeat center;
-}
-
-/* ************** Fonts and config for cards ******************* */
-.cnt_info_card {
-  padding-left: 1rem;
-}
-
-.Title1_card {
-  color: var(--color-font-title1_card);
-  font-family: var(--font-title1);
-  font-size: 2rem;
-  font-weight: 300;
-}
-
-.Title2_card {
-  color: var(--color-font-title2_card);
-  font-family: var(--font-title2);
-  font-size: 1.3rem;
-  padding-bottom: 1rem;
-}
-
-.Simpletext_card {
-  color: var(--color-font-text1_card);
-  font-family: var(--font-text1);
-  font-style: normal;
-  font-size: 0.85rem;
-}
-
-/********************** buttons for card ********************/
-
-.project_btn_all {
-  display: block;
-  background-color: var(--color-font-title1);
-  font-family: var(--font-title2);
-  font-weight: bold;
-  padding: 0.75rem;
-  text-decoration: none;
-  color: var(--color-font-menu);
-  transition: transform 0.4s ease;
-  text-align: center;
-}
-
-.project_btn_1 {
-  font-weight: bold;
-  text-decoration: none;
-  color: var(--color-font-menu);
-  width: fit-content;
-  transition: transform 0.4s ease;
-}
-
-.project_btn_2 {
-  color: var(--color-font-menu);
-  font-weight: bold;
-  text-decoration: none;
-  transition: transform 0.4s ease;
-}
-
-.project_btn_all:hover {
-  transform: translateY(-0.5rem);
-  cursor: pointer;
+  grid-template-columns: auto, 1fr ;
 }
 
 /* ****** main card work *********** */
-
-.main_card p {
-  margin-bottom: 2rem;
-  color: var(--color-font-title2-dark);
+.main_card_cnt {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  margin-bottom: 2.8rem;
+  overflow-x:hidden;
 }
 
-.Title2_dark {
-  font-family: var(--font-title2);
-  color: var(--color-font-title2-dark);
-  background-color: var(--color-background_clear);
-  font-size: 2.5rem;
+.main_card_cnt_img {
+  max-width: 100%;
+  
+}
+
+.MainCardTitle {
+  font-family: var(--font-card-title);
+  font-size: 2rem;
+  font-weight: lighter;
+  color: var(--color-main-card-title);
+  padding-top: 1rem;
+}
+
+.MainCardDescrip {
+  font-size: 0.9rem;
+  color: var(--color-main-card-text);
 }
 
 .list_feat {
   display: flex;
   flex-direction: row;
   justify-content: left;
-  margin-bottom: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
-.list_card_1st {
-  justify-content: space-between;
+.lu_btn_main_card {
+  justify-content: left;
 }
 
 .li_btn {
   list-style: none;
-  padding: 8px;
-  color: var(--color-font-text-dark);
-  border: solid 1px var(--color-back-content1);
-  margin-right: 5px;
+  font-family: var(--font-card-text);
+  color: var(--color-main-card-text);
+  font-weight: bolder;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem;
+  border: solid 1px var(--color-main-card-title);
+  margin-right: 0.8rem;
   font-family: var(--font-text1);
   font-style: normal;
 }
@@ -406,38 +334,140 @@
 .li_btn_2 {
   list-style: none;
   padding: 8px;
-  color: var(--color-font-text1);
+  color: var(--color-font-text1_card);
   background-color: var(--color-back-btn-card);
   border: none;
-  margin-right: 5px;
+  margin-right: 0.7rem;
   font-family: var(--font-text1);
   font-style: normal;
 }
+
+
+
+/******************* Cards for other works *****************************************************/
+
+.sec_card_cnt {
+  display: flex;
+  flex-direction: column-reverse;
+  background-size: cover;
+  margin-bottom: 1.5rem;
+}
+
+/*****************************************************************/
+
+.work-1 {
+  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
+  background-size: cover;
+}
+
+.work-2 {
+  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
+}
+
+.work-3 {
+  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
+}
+
+.work-4 {
+  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
+}
+
+.work-5 {
+  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
+}
+
+.work-6 {
+  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
+}
+
+/* ************** Fonts and config for cards ******************* */
+.cnt_info_card {
+  padding-top: 5rem;
+  padding-left: 1rem;
+}
+
+.Title1_card {
+  color: var(--color-font-title1_card);
+  font-family: var(--font-card-title);
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.Title2_card {
+  color: var(--color-font-title1_card);
+  font-family: var(--font-card-title);
+   font-size: 2rem;
+  font-weight: 300;
+}
+
+.CardDescrip {
+  color: var(--color-font-text1_card);
+  font-family: var(--font-text1);
+  font-size: 1rem;
+}
+
+
+/********************** buttons for card ********************/
+
+.SeeProjectBtn {
+  display: block;
+  background-color: var(--color-font-title1);
+  font-family: var(--font-title2);
+  font-weight: bold;
+  padding: 0.75rem;
+  text-decoration: none;
+  color:  var(--color-font-text1_card);
+  transition: transform 0.4s ease;
+  text-align: center;
+  letter-spacing: 0.1rem;
+  
+}
+
+/********* general config to btns  ***********/
+
+.BtnClass {
+  font-weight: bold;
+  text-decoration: none;
+  width: fit-content;
+  transition: transform 0.8s ease;
+}
+
+.project_btn_2 {
+  color: var(--color-font-menu);
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.8s ease;
+}
+
+.SeeProjectBtn:hover {
+  transform: translateY(-0.5rem);
+  border: 1px solid var(--color-font-title1);
+  background-color: var(--color-font-menu);
+  color: var(--color-font-title1);
+  cursor: pointer;
+}
+
+/********************************************************/
+
 
 @media (min-width: 768px) {
   .my_work {
     padding: 8.13rem 4rem;
   }
 
-  .main_card {
+  .main_card_cnt {
     flex-direction: row;
   }
 
-  .cnt_img_main_card {
-    width: 150%;
-    padding-right: 1rem;
-  }
 
-  .works_title {
+
+  .RecentWorksSection {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
     text-align: left;
   }
 
-  .Title-work-main {
-    width: fit-content;
-  }
 
   .line_div {
     margin: 0;
@@ -457,21 +487,34 @@
   background-position: bottom  right;
   overflow: hidden;
   height: fit-content;
-  padding: 8.13rem 1rem;
-}
-
-.about_text {
-  width: 100%;
+  padding: 7.5rem 1.5rem;
+  align-content: center;
+  justify-content: center;
 }
 
 .Tittle_about {
-  padding-top: 2rem;
+  color: var(--color-font-title1);
+  font-family: var(--font-title1);
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 105%;
+  padding-bottom: 1rem;
+}
+
+.DescripAbout {
+  color: var(--font-color-about);
+  font-family: var(--font-card-text);
+  font-size: 1rem;
+  line-height: 1.5rem;;
 }
 
 .resume_btn {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 7rem;
 }
+
+
+/************************* SKILLS SECTION**** ********************/
 
 .skills {
   display: flex;
@@ -479,76 +522,107 @@
   flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
-}
-
-.ul_skill {
-  margin-bottom: 2rem;
-}
-
-.li_skills {
-  list-style: none;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.skills img {
-  height: 1rem;
-  margin-right: 0.5rem;
+  padding: 0.5rem 1.5rem 5.4rem 1.5rem;
 }
 
 .line_div_dark {
   display: block;
   width: 100%;
-  margin: 7rem 0;
-  border-bottom: solid 2px white;
+  border-top: var(--color-font-text1_card) 1px solid ;
+  padding-bottom: 7.5rem;
+}
+
+.ul_skill {
+  font-family: var(--font-card-text);
+  color: var(--color-font-text1_card);
+  font-size: 1.5rem;
+  list-style: none;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.ul_skill_icon {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.ul_skill_icon_d {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.li_skills {
+  font-family: var(--font-card-text);
+  color: var(--color-font-text1_card);
+  font-size: 1.3rem;
+  list-style: none;
+  text-align: center;
+  margin: 1rem;
+}
+
+.li_skills_1 {
+  padding-top: 1.5rem;
 }
 
 /******************** SECTION CONTACT ME  **************************/
 
 .contact_cnt {
   display: grid;
+  grid-template-columns: 1fr;
   color: var(--color-font-text-dark);
   font-family: var(--font-text1);
-  grid-template-columns: 1fr;
-  grid-gap: 2rem;
-  height: fit-content;
-  padding: 7.5rem 1rem;
-  gap: 1.5rem;
+  padding: 4.5rem 1.5rem;
   margin-top: 3rem;
 }
 
-.contact_cnt h4 {
+.ContactDescript {
+  font-family: var(--font-card-text);
+  color: var(--color-font-contactme-text);
+  font-size: 2rem;
   text-align: center;
+}
+
+.form_input_fields {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  align-content: center;
+  align-items: center;
 }
 
 .input_field {
   border-style: none;
-  border-bottom: solid;
+  border-bottom: 1px solid;
   border-bottom-color: var(--color-back-bars);
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  width: 100%;
+  padding: 1.5rem 0;
 }
 
 .text_area {
+  border: none;
+  background-color: var(--color-background-textarea);
   padding: 1rem;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
   max-lines: 4;
+  width: 100%;
   height: 5rem;
 }
 
 .project_btn_submit {
-  margin-top: 1rem;
-}
-
-.contact_form * {
+  color: var(--color-font-text1_card);
+  margin-top: 1.3rem;
   font-size: 1rem;
-  border: none;
-  padding: 1rem;
+  
 }
 
-.grid_fields {
+/*********************** footer section ************************/
+
+.footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  border-top: var(--color-line-div-clear) 1px solid;
+  justify-content: center;  
+  font-size: 1.5rem;
 }
 
 /********************** MEDIA *******************************************/
@@ -564,10 +638,6 @@
   .about_container {
     display: flex;
     flex-direction: row;
-  }
-
-  .about_text {
-    width: 50%;
   }
 
   .skills {
