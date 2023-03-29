@@ -306,7 +306,9 @@
 
 .MainCardDescrip {
   font-size: 0.9rem;
+  font-family: var(--font-card-text);
   color: var(--color-main-card-text);
+  padding-top: 0.7rem;
 }
 
 .list_feat {
@@ -505,6 +507,7 @@
   font-family: var(--font-card-text);
   font-size: 1rem;
   line-height: 1.5rem;
+  padding-top: 0.7rem;
 }
 
 .resume_btn {
