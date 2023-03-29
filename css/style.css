@@ -13,9 +13,9 @@
   --font-title1: 'Crete Round', serif;
   --font-title2: 'Roboto', serif;
   --font-text1: 'Poppins', serif;
-  --color-font-title1_card: #ffffff;
-  --color-font-title2_card: #ffffff;
-  --color-font-text1_card: #ffffff;
+  --color-font-title1_card: #fff;
+  --color-font-title2_card: #fff;
+  --color-font-text1_card: #fff;
   --color-background_clear: white;
   --color-line-div: #212121;
   --color-back-btn-card: rgba(255, 255, 255, 0.24);
@@ -29,7 +29,7 @@
   --card-gradient: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
   --color-font-contactme-text: #172b4d;
   --color-background-clear: #e5e5e5;
-  --color-background-textarea: #FBF8F7;
+  --color-background-textarea: #fbf8f7;
   --color-line-div-clear: #dfe1e6;
 }
 
@@ -44,7 +44,7 @@
 .Toolbar {
   display: flex;
   justify-content: space-between;
-  align-items: center; 
+  align-items: center;
   background-color: var(--color-back-bars);
   height: 48px;
   padding-right: 1rem;
@@ -249,10 +249,10 @@
 .RecentWorksSection {
   background-color: var(--color-background_clear);
   padding-top: 1rem;
-  padding-bottom: 2.5rem;;
+  padding-bottom: 2.5rem;
   margin-bottom: 3.25rem;
   text-align: center;
-  border-bottom: 1px solid var(--color-line-div);  
+  border-bottom: 1px solid var(--color-line-div);
 }
 
 .Title_MyRecentWorks {
@@ -275,7 +275,7 @@
 
 .grid_works {
   display: grid;
-  grid-template-columns: auto, 1fr ;
+  grid-template-columns: auto, 1fr;
 }
 
 /* ****** main card work *********** */
@@ -285,12 +285,11 @@
   flex-wrap: wrap;
   padding-top: 1.5rem;
   margin-bottom: 2.8rem;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 
 .main_card_cnt_img {
   max-width: 100%;
-  
 }
 
 .MainCardTitle {
@@ -320,14 +319,13 @@
 
 .li_btn {
   list-style: none;
-  font-family: var(--font-card-text);
+  font-family: var(--font-text1);
   color: var(--color-main-card-text);
   font-weight: bolder;
   font-size: 0.9rem;
   padding: 0.5rem 0.8rem;
   border: solid 1px var(--color-main-card-title);
   margin-right: 0.8rem;
-  font-family: var(--font-text1);
   font-style: normal;
 }
 
@@ -353,7 +351,7 @@
   margin-bottom: 1.5rem;
 }
 
-/*****************************************************************/
+/****************************************************************   */
 
 .work-1 {
   background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
@@ -396,7 +394,7 @@
 .Title2_card {
   color: var(--color-font-title1_card);
   font-family: var(--font-card-title);
-   font-size: 2rem;
+  font-size: 2rem;
   font-weight: 300;
 }
 
@@ -416,11 +414,10 @@
   font-weight: bold;
   padding: 0.75rem;
   text-decoration: none;
-  color:  var(--color-font-text1_card);
+  color: var(--color-font-text1_card);
   transition: transform 0.4s ease;
   text-align: center;
   letter-spacing: 0.1rem;
-  
 }
 
 /********* general config to btns  ***********/
@@ -447,8 +444,7 @@
   cursor: pointer;
 }
 
-/********************************************************/
-
+/*******************************************************   */
 
 @media (min-width: 768px) {
   .my_work {
@@ -459,15 +455,12 @@
     flex-direction: row;
   }
 
-
-
   .RecentWorksSection {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
     text-align: left;
   }
-
 
   .line_div {
     margin: 0;
@@ -505,7 +498,7 @@
   color: var(--font-color-about);
   font-family: var(--font-card-text);
   font-size: 1rem;
-  line-height: 1.5rem;;
+  line-height: 1.5rem;
 }
 
 .resume_btn {
@@ -528,7 +521,7 @@
 .line_div_dark {
   display: block;
   width: 100%;
-  border-top: var(--color-font-text1_card) 1px solid ;
+  border-top: var(--color-font-text1_card) 1px solid;
   padding-bottom: 7.5rem;
 }
 
@@ -612,7 +605,6 @@
   color: var(--color-font-text1_card);
   margin-top: 1.3rem;
   font-size: 1rem;
-  
 }
 
 /*********************** footer section ************************/
@@ -621,7 +613,7 @@
   display: flex;
   flex-direction: row;
   border-top: var(--color-line-div-clear) 1px solid;
-  justify-content: center;  
+  justify-content: center;
   font-size: 1.5rem;
 }
 
