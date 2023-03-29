@@ -446,7 +446,7 @@
 
 .SeeProjectBtn:active {
   background-color: var(--color-btn-active);
-  color: var(--color-btn-disabled);  
+  color: var(--color-btn-disabled);
   cursor: pointer;
 }
 
