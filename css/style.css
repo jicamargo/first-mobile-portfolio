@@ -7,18 +7,40 @@
   --color-font-text1: #fff5e1;
   --color-back-bars: #3c3a39;
   --color-back-content1: #1c1a19;
+  --color-font-title2-dark: #1c1a19;
+  --color-font-text-dark: #1c1a19;
   --font-toolbar: 'Inter', serif;
   --font-title1: 'Crete Round', serif;
   --font-title2: 'Roboto', serif;
   --font-text1: 'Poppins', serif;
+  --color-font-title1_card: #fff;
+  --color-font-title2_card: #fff;
+  --color-font-text1_card: #fff;
+  --color-background_clear: white;
+  --color-line-div: #212121;
+  --color-back-btn-card: rgba(255, 255, 255, 0.24);
+  --color-main-card-title: #091e42;
+  --color-main-card-text: #091e42;
+  --font-card-title: 'Crete Round', serif;
+  --font-card-text: 'Inter', serif;
+  --font-color-about: #f4f5f7;
   --transition-transform: transform 0.7s ease;
   --transition-font: font-size 0.7s ease;
+  --card-gradient: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+  --color-font-contactme-text: #172b4d;
+  --color-background-clear: #e5e5e5;
+  --color-background-textarea: #fbf8f7;
+  --color-line-div-clear: #dfe1e6;
+  --color-btn-normal: #f55800;
+  --color-btn-active: #e05304;
+  --color-btn-hover: #fff5e1;
+  --color-btn-disabled: #f4f1f0;
 }
 
 * {
   margin: 0;
   padding: 0;
-  box-sizing: content-box;
+  box-sizing: border-box;
 }
 
 /* *************** mobile version - mobile fisrt design ************** */
@@ -190,8 +212,7 @@
     font-size: 1.2rem;
   }
 
-  .Simpletext {
-    font-size: 0.8rem;
+  .page_bottom {
     padding-bottom: 10rem;
   }
 
@@ -217,3 +238,427 @@
 }
 
 /* ********************** end of desktop version ********************** */
+
+/*  ******** Recent Works Section ****** */
+
+.RecentWorks {
+  padding: 7.5rem 1.5rem;
+  background-color: var(--color-background_clear);
+}
+
+.RecentWorksSection {
+  background-color: var(--color-background_clear);
+  padding-top: 1rem;
+  padding-bottom: 2.5rem;
+  margin-bottom: 3.25rem;
+  text-align: center;
+  border-bottom: 1px solid var(--color-line-div);
+}
+
+.Title_MyRecentWorks {
+  font-family: var(--font-title1);
+  font-weight: lighter;
+  color: var(--color-font-title2-dark);
+  background-color: var(--color-background_clear);
+  font-size: 2.5rem;
+  line-height: 3.25rem;
+}
+
+.line_div {
+  display: block;
+  border-bottom: solid 2px var(--color-back-content1);
+  width: 100%;
+  margin: 4rem auto;
+}
+
+/*************** Grid layout for  project cards ********************/
+
+.grid_works {
+  display: grid;
+  grid-template-columns: auto, 1fr;
+}
+
+/* ****** main card work *********** */
+.main_card_cnt {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 1.5rem;
+  margin-bottom: 2.8rem;
+  overflow-x: hidden;
+}
+
+.main_card_cnt_img {
+  max-width: 100%;
+}
+
+.MainCardTitle {
+  font-family: var(--font-card-title);
+  font-size: 2rem;
+  font-weight: lighter;
+  color: var(--color-main-card-title);
+  padding-top: 1rem;
+}
+
+.MainCardDescrip {
+  font-size: 0.9rem;
+  font-family: var(--font-card-text);
+  color: var(--color-main-card-text);
+  padding-top: 0.7rem;
+}
+
+.list_feat {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.lu_btn_main_card {
+  justify-content: left;
+}
+
+.li_btn {
+  list-style: none;
+  font-family: var(--font-text1);
+  color: var(--color-main-card-text);
+  font-weight: bolder;
+  font-size: 0.9rem;
+  padding: 0.5rem 0.8rem;
+  border: solid 1px var(--color-main-card-title);
+  margin-right: 0.8rem;
+  font-style: normal;
+}
+
+.li_btn_2 {
+  list-style: none;
+  padding: 8px;
+  color: var(--color-font-text1_card);
+  background-color: var(--color-back-btn-card);
+  border: none;
+  margin-right: 0.7rem;
+  font-family: var(--font-text1);
+  font-style: normal;
+}
+
+/******************* Cards for other works *****************************************************/
+
+.sec_card_cnt {
+  display: flex;
+  flex-direction: column-reverse;
+  background-size: cover;
+  margin-bottom: 1.5rem;
+}
+
+/****************************************************************   */
+
+.work-1 {
+  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
+  background-size: cover;
+}
+
+.work-2 {
+  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
+}
+
+.work-3 {
+  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
+}
+
+.work-4 {
+  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
+}
+
+.work-5 {
+  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
+}
+
+.work-6 {
+  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
+}
+
+/* ************** Fonts and config for cards ******************* */
+.cnt_info_card {
+  padding-top: 5rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.Title1_card {
+  color: var(--color-font-title1_card);
+  font-family: var(--font-card-title);
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.Title2_card {
+  color: var(--color-font-title1_card);
+  font-family: var(--font-card-title);
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.CardDescrip {
+  color: var(--color-font-text1_card);
+  font-family: var(--font-card-text);
+  font-size: 1rem;
+  padding-top: 0.7rem;
+}
+
+/********************** buttons for card ********************/
+
+.SeeProjectBtn {
+  display: block;
+  background-color: var(--color-font-title1);
+  font-family: var(--font-title2);
+  font-weight: bold;
+  padding: 0.75rem;
+  text-decoration: none;
+  color: var(--color-font-text1_card);
+  transition: transform 0.4s ease;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+/********* general config to btns  ***********/
+
+.BtnClass {
+  font-weight: bold;
+  text-decoration: none;
+  width: fit-content;
+  transition: transform 0.8s ease;
+}
+
+.project_btn_2 {
+  color: var(--color-font-menu);
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.8s ease;
+}
+
+.SeeProjectBtn:hover {
+  border: 1px solid var(--color-btn-normal);
+  background-color: var(--color-btn-hover);
+  color: var(--color-font-title1);
+  cursor: pointer;
+}
+
+.SeeProjectBtn:active {
+  background-color: var(--color-btn-active);
+  color: var(--color-btn-disabled);
+  cursor: pointer;
+}
+
+/*******************************************************   */
+
+@media (min-width: 768px) {
+  .my_work {
+    padding: 8.13rem 4rem;
+  }
+
+  .main_card_cnt {
+    flex-direction: row;
+  }
+
+  .RecentWorksSection {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    text-align: left;
+  }
+
+  .line_div {
+    margin: 0;
+    width: 60%;
+  }
+}
+
+/* ************** ABOUT SECTION ****************** */
+.back_dark {
+  background-color: var(--color-back-content1);
+}
+
+.about {
+  background-image: url("../images/about-me-mobile-img.png");
+  background-repeat: no-repeat;
+  background-size: 50%;
+  background-position: bottom  right;
+  overflow: hidden;
+  height: fit-content;
+  padding: 7.5rem 1.5rem;
+  align-content: center;
+  justify-content: center;
+}
+
+.Tittle_about {
+  color: var(--color-font-title1);
+  font-family: var(--font-title1);
+  font-size: 4.5rem;
+  font-weight: 300;
+  line-height: 105%;
+  padding-bottom: 1rem;
+}
+
+.DescripAbout {
+  color: var(--font-color-about);
+  font-family: var(--font-card-text);
+  font-size: 1rem;
+  line-height: 1.5rem;
+  padding-top: 0.7rem;
+}
+
+.resume_btn {
+  margin-top: 1.5rem;
+  margin-bottom: 7rem;
+}
+
+/************************* SKILLS SECTION**** ********************/
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0.5rem 1.5rem 5.4rem 1.5rem;
+}
+
+.line_div_dark {
+  display: block;
+  width: 100%;
+  border-top: var(--color-font-text1_card) 1px solid;
+  padding-bottom: 7.5rem;
+}
+
+.ul_skill {
+  font-family: var(--font-card-text);
+  color: var(--color-font-text1_card);
+  font-size: 1.5rem;
+  list-style: none;
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.ul_skill_icon {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.ul_skill_icon_d {
+  height: 1.5rem;
+  margin-right: 1rem;
+}
+
+.li_skills {
+  font-family: var(--font-card-text);
+  color: var(--color-font-text1_card);
+  font-size: 1.3rem;
+  list-style: none;
+  text-align: center;
+  margin: 1rem;
+}
+
+.li_skills_1 {
+  padding-top: 1.5rem;
+}
+
+/******************** SECTION CONTACT ME  **************************/
+
+.contact_cnt {
+  display: grid;
+  grid-template-columns: 1fr;
+  color: var(--color-font-text-dark);
+  font-family: var(--font-text1);
+  padding: 4.5rem 1.5rem;
+  margin-top: 3rem;
+}
+
+.ContactDescript {
+  font-family: var(--font-card-text);
+  color: var(--color-font-contactme-text);
+  font-size: 2rem;
+  text-align: center;
+}
+
+.form_input_fields {
+  display: flex;
+  flex-direction: column;
+  padding-top: 3rem;
+  align-content: center;
+  align-items: center;
+}
+
+.input_field {
+  border-style: none;
+  border-bottom: 1px solid;
+  border-bottom-color: var(--color-back-bars);
+  width: 100%;
+  padding: 1.5rem 0;
+}
+
+.text_area {
+  border: none;
+  background-color: var(--color-background-textarea);
+  padding: 1rem;
+  margin-top: 1.5rem;
+  max-lines: 4;
+  width: 100%;
+  height: 5rem;
+}
+
+.project_btn_submit {
+  color: var(--color-font-text1_card);
+  margin-top: 1.3rem;
+  font-size: 1rem;
+}
+
+/*********************** footer section ************************/
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  border-top: var(--color-line-div-clear) 1px solid;
+  justify-content: center;
+  font-size: 1.5rem;
+}
+
+/********************** MEDIA *******************************************/
+@media (min-width: 768px) {
+  .about {
+    background-size: 30%;
+    background-position: bottom  right;
+    height: fit-content;
+    padding: 7rem 1rem;
+    overflow: hidden;
+  }
+
+  .about_container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    text-align: center;
+    margin-top: 8rem;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
+
+  .li_skills {
+    text-align: left;
+  }
+
+  .contact_cnt {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 8rem 4rem;
+  }
+
+  .iconlist_footer {
+    flex-direction: row;
+    text-align: center;
+  }
+}
