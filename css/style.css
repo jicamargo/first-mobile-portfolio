@@ -212,10 +212,6 @@
     font-size: 1.2rem;
   }
 
-  .Simpletext {
-    font-size: 0.8rem;
-  }
-
   .page_bottom {
     padding-bottom: 10rem;
   }
@@ -386,6 +382,7 @@
 .cnt_info_card {
   padding-top: 5rem;
   padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .Title1_card {
@@ -404,8 +401,9 @@
 
 .CardDescrip {
   color: var(--color-font-text1_card);
-  font-family: var(--font-text1);
+  font-family: var(--font-card-text);
   font-size: 1rem;
+  padding-top: 0.7rem;
 }
 
 /********************** buttons for card ********************/
