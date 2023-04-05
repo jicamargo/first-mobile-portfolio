@@ -49,6 +49,7 @@
 ## ⭐️ Key Features <a name="key-features"></a>
 
 - **["First mobile" design]**
+- **["Contact me form]**
 - **[Responsive Web Design]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -112,8 +113,6 @@ No deployment needed, you can enter directly to index.html
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[My jobs page]**
-- [ ] **[Contact us form]**
 - [ ] **[Fancy animations]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
