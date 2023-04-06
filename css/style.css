@@ -194,20 +194,23 @@ body {
 
 /* The grid container */
 .grid_works {
+  align-items: center;
+  justify-items: center;
   display: grid;
   grid-template-areas: 
-    'header1 header1 header1' 
-    'left left left ' 
-    'middle middle middle' 
-    'right right right'; 
+    'header' 
+    'left' 
+    'middle' 
+    'right'; 
   /* grid-column-gap: 10px; - if you want gap between the columns */
 } 
 
 /* Style the left column */
 .header1 {
-  grid-area: header1;
+  grid-area: header;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .left {
@@ -226,14 +229,6 @@ body {
 
 
 /* ****** main card work *********** */
-/* .main_card_cnt {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-top: 1.5rem;
-  margin-bottom: 2.8rem;
-  overflow-x: hidden;
-} */
 
 .cnt_info_main_card {
   width: 100%;
@@ -244,9 +239,8 @@ body {
   width: auto;
 }
 .main_card_cnt_img {
-  width: fit-content;
+  width: 100%;
 }
-
 
 .cnt_info_main_card {
   flex-basis: 0;
@@ -270,15 +264,15 @@ body {
 }
 
 .list_feat {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  justify-content: flex-start;
+  margin: 1rem auto;
 }
 
-.lu_btn_main_card {
-  justify-content: left;
+.list_feat > * + * {
+  margin-left: 0.5rem;
 }
 
 .li_btn {
@@ -422,15 +416,19 @@ body {
 }
 
 .about_cnt {
+  display: flex;
+  flex-direction: row;
   background-image: url("../images/about-me-mobile-img.png");
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 12rem ;
   background-position: bottom  right;
   overflow: hidden;
-  height: fit-content;
   padding: 7.5rem 1.5rem;
-  align-content: center;
-  justify-content: center;
+}
+
+
+.about_info {
+  width:100%;
 }
 
 .Tittle_about {
@@ -569,7 +567,8 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  list-style: none
+  list-style: none;
+  gap: 1rem;
 }
 
 .thick-line {
@@ -694,7 +693,7 @@ body {
   .grid_works {
     display: grid;
     grid-template-areas: 
-    'header1 header1 header1' 
+    'header header header' 
     'left middle right'; 
   }
 
@@ -719,11 +718,74 @@ body {
     max-width: 435px;
     justify-self: center;
   }
-  
+ 
+/********************** about *******************/
+  .about_cnt {
+    background-image: url("../images/about-me-desktop-img.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: top 50% right;
+    overflow: hidden;
+    padding: 0 1.5rem;
+    align-items: center;
+    min-height: 60vw;
+  }
 
+  .about_info {
+    width:50%;
+  }
+
+  .resume_btn {
+    margin-top: 1.5rem;
+    margin-bottom: 0rem;
+  }
+
+  /******************* skills ****************/
+  .skill_col {
+    display: flex;
+    width: 100%;
+    justify-content:space-between;
+  }
+
+  .ul_skill {
+    width: 33%;
+  }
+
+  /********************** contact me *********************/
+
+  .contact_cnt {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4.5rem 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+  }
+
+  .ContactDescript {
+    text-align: left;
+    margin: 0 1rem;
+  }
+
+  .form_input_fields {
+    padding-top: 0;
+    margin: 0 1rem;
+  }
+
+  .project_btn_submit {
+  align-self: flex-start;
+  }
+
+  /************* footer ************/
+  .footer-icon:hover {
+    transform: translatey(-0.5rem);
+    transition: var(--transition-transform);
+    font-size: larger;
+    font-weight: bold;
+    color: var(--color-font-menu-selected);
+  }
 }
 
-/*************************** high resolution ***********************/
+/*********************** high resolution ***********************/
 /************** only increases a litle font sizes **************/
 
 @media screen and (min-width: 992px) {
@@ -740,7 +802,7 @@ body {
     width: auto;
   }
 
-    .big-title {
+ .big-title {
     font-size: 4.5rem;
   }
 
@@ -752,62 +814,4 @@ body {
     padding-top: 0.7rem;
     font-size: 1.25rem;
   }
-
 }
-
-/* ********************** end of desktop version ********************** */
-
-
-/*
-@media (min-width: 768px) {
-  .about_cnt {
-    background-size: 20%;
-    background-position: bottom  right;
-    height: fit-content;
-    padding: 7rem 1rem;
-    overflow: hidden;
-  }
-
-  .about_info {
-    display: flex;
-    flex-direction: row;
-  }
-
-  .skills_cnt {
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    text-align: center;
-    margin-top: 8rem;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-
-  .li_skills {
-    text-align: left;
-  }
-
-  .contact_cnt {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 8rem 4rem;
-  }
-
-  .iconlist_footer {
-    flex-direction: row;
-    text-align: center;
-  }
-
-.main_card_cnt {
-    flex-direction: row;
-  }
-
-  .RecentWorksSectionTitle {
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    text-align: left;
-  }
-
-}
-
-*/
