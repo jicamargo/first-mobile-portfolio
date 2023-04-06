@@ -33,7 +33,7 @@
   --font-color-about: #f4f5f7;
   --transition-transform: transform 0.7s ease;
   --transition-font: font-size 0.7s ease;
-  --card-gradient: linear-gradient(180deg, rgba(38, 38, 38, 5%) 0.0%, rgba(38, 38, 38, 0.9) 61.94%);
+  --card-gradient: linear-gradient(180deg, rgba(38, 38, 38, 5%) 0%, rgba(38, 38, 38, 0.9) 61.94%);
   --color-font-contactme-text: #172b4d;
   --color-background-clear: #e5e5e5;
   --color-background-textarea: #fbf8f7;
@@ -76,6 +76,11 @@ body {
 
 .menu-pc {
   display: none;
+  font-size: 0.9rem;
+  color: var(--color-font-menu);
+  justify-content: flex-end;
+  align-items: center;
+  order: 99;
 }
 
 .menu-mobile {
@@ -162,7 +167,7 @@ body {
   background-color: var(--color-background_clear);
 }
 
-.RecentWorksSectionTitle  {
+.RecentWorksSectionTitle {
   display: flex;
   flex-direction: column;
   margin-bottom: 3.25rem;
@@ -197,13 +202,14 @@ body {
   align-items: center;
   justify-items: center;
   display: grid;
-  grid-template-areas: 
-    'header' 
-    'left' 
-    'middle' 
-    'right'; 
+  grid-template-areas:
+    'header'
+    'left'
+    'middle'
+    'right';
+
   /* grid-column-gap: 10px; - if you want gap between the columns */
-} 
+}
 
 /* Style the left column */
 .header1 {
@@ -238,15 +244,10 @@ body {
 .cnt_img_main_card {
   width: auto;
 }
+
 .main_card_cnt_img {
   width: 100%;
 }
-
-.cnt_info_main_card {
-  flex-basis: 0;
-  /* padding: 0 1.5rem; */
-}
-
 
 .MainCardTitle {
   font-family: var(--font-card-title);
@@ -310,7 +311,7 @@ body {
   justify-self: center;
 }
 
-/*****************************************************************/
+/****************************************************************   */
 
 .work-1 {
   background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
@@ -420,15 +421,14 @@ body {
   flex-direction: row;
   background-image: url("../images/about-me-mobile-img.png");
   background-repeat: no-repeat;
-  background-size: 12rem ;
+  background-size: 12rem;
   background-position: bottom  right;
   overflow: hidden;
   padding: 7.5rem 1.5rem;
 }
 
-
 .about_info {
-  width:100%;
+  width: 100%;
 }
 
 .Tittle_about {
@@ -579,12 +579,10 @@ body {
 }
 
 /****************** general settings for desktop version elements ************************/
-.menu-pc {
-  font-size: 0.9rem;
-  color: var(--color-font-menu);
-  justify-content: flex-end;
-  align-items: center;
-  order: 99;
+
+.item-menu-pc {
+  padding: 0 1rem 0 1rem;
+  background-color: var(--color-back-bars);
 }
 
 .item-menu-pc:hover {
@@ -595,55 +593,47 @@ body {
   color: var(--color-font-menu-selected);
 }
 
-.item-menu-pc-icon:hover {
-  transform: scale(1.5) translateY(-0.2rem);
-  transition: var(--transition-transform);
-}
-
-.item-menu-pc {
-  padding: 0 1rem 0 1rem;
-  background-color: var(--color-back-bars);
-}
-
 .item-menu-pc-icon {
   background-color: var(--color-back-bars);
   height: 1rem;
 }
 
+.item-menu-pc-icon:hover {
+  transform: scale(1.5) translateY(-0.2rem);
+  transition: var(--transition-transform);
+}
 
 /********************** MEDIA QUERIES *********************************/
-
 
 /****************** desktop version (768px) ***********************/
 
 @media screen and (min-width: 768px) {
-
   /********** M.Q menu and first page ****************/
 
   .menu-mobile {
     display: none;
   }
- 
+
   .logo {
     padding-left: 10%;
   }
-  
+
   .menu-pc {
     display: flex;
     padding-right: 10%;
   }
-  
+
   .content1 {
     flex-direction: row;
     background-image: url("../images/background.svg");
     background-repeat: no-repeat;
-    background-size:contain;
+    background-size: contain;
     background-position: top -2.5rem right;
     overflow: hidden;
     min-height: 60vw;
     align-items: center;
   }
-  
+
   .Headline {
     padding-top: 0;
     padding-bottom: 0;
@@ -665,14 +655,14 @@ body {
     font-weight: bold;
     color: var(--color-font-menu-selected);
   }
-  
+
   .big-title {
     padding-top: 0;
   }
 
   /********** M.Q recentworks_cnt ****************/
-  
-  .RecentWorksSectionTitle  {
+
+  .RecentWorksSectionTitle {
     display: flex;
     flex-direction: row;
     flex-grow: 1;
@@ -681,20 +671,22 @@ body {
   .Title_MyRecentWorks {
     padding-right: 1rem;
   }
-  .Title_MyRecentWorks h3{
+
+  .Title_MyRecentWorks h3 {
     padding-top: 1rem;
     padding-bottom: 1.5rem;
     width: 20rem;
   }
+
   .recentworks-line {
-    width:1fr;
+    width: 1fr;
   }
 
   .grid_works {
     display: grid;
-    grid-template-areas: 
-    'header header header' 
-    'left middle right'; 
+    grid-template-areas:
+      'header header header'
+      'left middle right';
   }
 
   .header1 {
@@ -702,7 +694,7 @@ body {
     flex-direction: row;
     width: 90vw;
   }
-  
+
   .cnt_img_main_card {
     flex-basis: 70%;
   }
@@ -718,8 +710,8 @@ body {
     max-width: 435px;
     justify-self: center;
   }
- 
-/********************** about *******************/
+
+  /********************** about *******************/
   .about_cnt {
     background-image: url("../images/about-me-desktop-img.svg");
     background-repeat: no-repeat;
@@ -732,19 +724,19 @@ body {
   }
 
   .about_info {
-    width:50%;
+    width: 50%;
   }
 
   .resume_btn {
     margin-top: 1.5rem;
-    margin-bottom: 0rem;
+    margin-bottom: 0;
   }
 
   /******************* skills ****************/
   .skill_col {
     display: flex;
     width: 100%;
-    justify-content:space-between;
+    justify-content: space-between;
   }
 
   .ul_skill {
@@ -772,12 +764,12 @@ body {
   }
 
   .project_btn_submit {
-  align-self: flex-start;
+    align-self: flex-start;
   }
 
   /************* footer ************/
   .footer-icon:hover {
-    transform: translatey(-0.5rem);
+    transform: translateY(-0.5rem);
     transition: var(--transition-transform);
     font-size: larger;
     font-weight: bold;
@@ -786,6 +778,7 @@ body {
 }
 
 /*********************** high resolution ***********************/
+
 /************** only increases a litle font sizes **************/
 
 @media screen and (min-width: 992px) {
@@ -802,14 +795,14 @@ body {
     width: auto;
   }
 
- .big-title {
+  .big-title {
     font-size: 4.5rem;
   }
 
   .Supportingtext {
     font-size: 2rem;
   }
-   
+
   .Simpletext {
     padding-top: 0.7rem;
     font-size: 1.25rem;
