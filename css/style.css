@@ -50,7 +50,6 @@ body {
   font-size: 16px;
 }
 
-
 /* *************** mobile version - mobile fisrt design ************** */
 
 .Toolbar {
@@ -232,7 +231,6 @@ body {
 .right {
   grid-area: right;
 }
-
 
 /* ****** main card work *********** */
 
