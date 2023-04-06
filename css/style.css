@@ -33,7 +33,7 @@
   --font-color-about: #f4f5f7;
   --transition-transform: transform 0.7s ease;
   --transition-font: font-size 0.7s ease;
-  --card-gradient: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+  --card-gradient: linear-gradient(180deg, rgba(38, 38, 38, 5%) 0.0%, rgba(38, 38, 38, 0.9) 61.94%);
   --color-font-contactme-text: #172b4d;
   --color-background-clear: #e5e5e5;
   --color-background-textarea: #fbf8f7;
@@ -46,15 +46,20 @@
   --color-thick-Line: #0d151e;
 }
 
+body {
+  font-size: 16px;
+}
+
 
 /* *************** mobile version - mobile fisrt design ************** */
 
 .Toolbar {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   align-items: center;
   background-color: var(--color-back-bars);
-  height: 3rem;
+  padding: 1rem;
   padding-right: 1rem;
   font-family: var(--font-toolbar);
   color: var(--color-font-menu);
@@ -157,51 +162,97 @@
   background-color: var(--color-background_clear);
 }
 
-.RecentWorksSectionTitle {
-  background-color: var(--color-background_clear);
+.RecentWorksSectionTitle  {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.25rem;
+  text-align: center;
+  align-items: center;
+}
+
+.Title_MyRecentWorks h3 {
   padding-top: 1rem;
   padding-bottom: 2.5rem;
-  margin-bottom: 3.25rem;
+  font-family: var(--font-title1);
+  font-weight: lighter;
+  color: var(--color-font-title2-dark);
+  font-size: 2.5rem;
+}
+
+.recentworks-line {
+  width: 100%;
   text-align: center;
   border-bottom: 1px solid var(--color-line-div);
 }
 
-.Title_MyRecentWorks {
-  font-family: var(--font-title1);
-  font-weight: lighter;
-  color: var(--color-font-title2-dark);
-  background-color: var(--color-background_clear);
-  font-size: 2.5rem;
-  line-height: 3.25rem;
-}
-
-.line_div {
-  display: block;
-  border-bottom: solid 2px var(--color-back-dark);
-  width: 100%;
-  margin: 4rem auto;
-}
-
 /*************** Grid layout for  project cards ********************/
 
-.grid_works {
+/* .grid_works {
   display: grid;
   grid-template-columns: auto, 1fr;
+} */
+
+/* The grid container */
+.grid_works {
+  display: grid;
+  grid-template-areas: 
+    'header1 header1 header1' 
+    'left left left ' 
+    'middle middle middle' 
+    'right right right'; 
+  /* grid-column-gap: 10px; - if you want gap between the columns */
+} 
+
+/* Style the left column */
+.header1 {
+  grid-area: header1;
+  display: flex;
+  flex-direction: column;
 }
 
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
+}
+
+
 /* ****** main card work *********** */
-.main_card_cnt {
+/* .main_card_cnt {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   padding-top: 1.5rem;
   margin-bottom: 2.8rem;
   overflow-x: hidden;
+} */
+
+.cnt_info_main_card {
+  width: 100%;
+  margin-bottom: 2.8rem;
 }
 
-.main_card_cnt_img {
-  max-width: 100%;
+.cnt_img_main_card {
+  width: auto;
 }
+.main_card_cnt_img {
+  width: fit-content;
+}
+
+
+.cnt_info_main_card {
+  flex-basis: 0;
+  /* padding: 0 1.5rem; */
+}
+
 
 .MainCardTitle {
   font-family: var(--font-card-title);
@@ -260,6 +311,9 @@
   flex-direction: column-reverse;
   background-size: cover;
   margin-bottom: 1.5rem;
+  min-height: 386px;
+  max-width: 435px;
+  justify-self: center;
 }
 
 /*****************************************************************/
@@ -525,68 +579,76 @@
   border: 4px solid var(--color-thick-Line);
 }
 
+/****************** general settings for desktop version elements ************************/
+.menu-pc {
+  font-size: 0.9rem;
+  color: var(--color-font-menu);
+  justify-content: flex-end;
+  align-items: center;
+  order: 99;
+}
+
+.item-menu-pc:hover {
+  transform: translateY(-0.2rem);
+  transition: var(--transition-transform), var(--transition-font);
+  font-size: larger;
+  font-weight: bold;
+  color: var(--color-font-menu-selected);
+}
+
+.item-menu-pc-icon:hover {
+  transform: scale(1.5) translateY(-0.2rem);
+  transition: var(--transition-transform);
+}
+
+.item-menu-pc {
+  padding: 0 1rem 0 1rem;
+  background-color: var(--color-back-bars);
+}
+
+.item-menu-pc-icon {
+  background-color: var(--color-back-bars);
+  height: 1rem;
+}
+
+
 /********************** MEDIA QUERIES *********************************/
 
 
 /****************** desktop version (768px) ***********************/
 
 @media screen and (min-width: 768px) {
+
+  /********** M.Q menu and first page ****************/
+
   .menu-mobile {
     display: none;
   }
-
-  .Toolbar {
-    height: 4.5rem;
+ 
+  .logo {
+    padding-left: 10%;
   }
-
-  .Mylogo {
-    padding-left: 9rem;
-  }
-
+  
   .menu-pc {
     display: flex;
-    font-size: 0.9rem;
-    color: var(--color-font-menu);
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 9rem;
-    background-color: var(--color-back-bars);
-    order: 99;
+    padding-right: 10%;
   }
-
-  .item-menu-pc {
-    padding: 0 1rem 0 1rem;
-    background-color: var(--color-back-bars);
-  }
-
-  .item-menu-pc-icon {
-    background-color: var(--color-back-bars);
-    height: 1rem;
-  }
-
+  
   .content1 {
     flex-direction: row;
     background-image: url("../images/background.svg");
     background-repeat: no-repeat;
-    background-size:auto;
+    background-size:contain;
     background-position: top -2.5rem right;
     overflow: hidden;
-    min-height: 100vh;
+    min-height: 60vw;
+    align-items: center;
   }
   
-  .item-menu-pc:hover {
-    transform: translateY(-0.2rem);
-    transition: var(--transition-transform), var(--transition-font);
-    font-size: larger;
-    font-weight: bold;
-    color: var(--color-font-menu-selected);
-  }
-
-  .item-menu-pc-icon:hover {
-    transform: scale(1.5) translateY(-0.2rem);
-    transition: var(--transition-transform);
-    font-weight: bold;
-    color: var(--color-font-menu-selected);
+  .Headline {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 45%;
   }
 
   .iconlist_main {
@@ -597,11 +659,6 @@
     gap: 1rem;
   }
 
-  .socialmediaicon {
-    height: 1.5rem;
-    width: auto;
-  }
-
   .socialmediaicon:hover {
     transform: translateX(0.5rem);
     transition: var(--transition-transform);
@@ -610,11 +667,80 @@
     color: var(--color-font-menu-selected);
   }
   
-  .Headline {
-    padding: 5rem 45rem 0 2.5rem;   
-  }
- 
   .big-title {
+    padding-top: 0;
+  }
+
+  /********** M.Q recentworks_cnt ****************/
+  
+  .RecentWorksSectionTitle  {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+  }
+
+  .Title_MyRecentWorks {
+    padding-right: 1rem;
+  }
+  .Title_MyRecentWorks h3{
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    width: 20rem;
+  }
+  .recentworks-line {
+    width:1fr;
+  }
+
+  .grid_works {
+    display: grid;
+    grid-template-areas: 
+    'header1 header1 header1' 
+    'left middle right'; 
+  }
+
+  .header1 {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+  }
+  
+  .cnt_img_main_card {
+    flex-basis: 70%;
+  }
+
+  .cnt_info_main_card {
+    flex-basis: 30%;
+    padding: 0 1.5rem;
+  }
+
+  .sec_card_cnt {
+    margin: 1.3rem 1rem;
+    min-height: 386px;
+    max-width: 435px;
+    justify-self: center;
+  }
+  
+
+}
+
+/*************************** high resolution ***********************/
+/************** only increases a litle font sizes **************/
+
+@media screen and (min-width: 992px) {
+  .menu-mobile {
+    display: none;
+  }
+
+  .Toolbar {
+    height: 4.5rem;
+  }
+
+  .socialmediaicon {
+    height: 1.5rem;
+    width: auto;
+  }
+
+    .big-title {
     font-size: 4.5rem;
   }
 
@@ -627,18 +753,6 @@
     font-size: 1.25rem;
   }
 
-  /*
-
-
-
-
-  .page_bottom {
-    padding-bottom: 10rem;
-  }
-
-
-
-  */
 }
 
 /* ********************** end of desktop version ********************** */
