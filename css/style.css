@@ -62,6 +62,11 @@ body {
   padding-right: 1rem;
   font-family: var(--font-toolbar);
   color: var(--color-font-menu);
+  animation: slideInLeft 1s  ;
+}
+
+.logo {
+  animation: slideInLeft 2s 0.3s;
 }
 
 .Mylogo {
@@ -301,7 +306,14 @@ body {
   min-height: 386px;
   max-width: 435px;
   justify-self: center;
+  transition: scale 1s ease;
 }
+
+.sec_card_cnt:hover {
+  scale: 1.05;
+}
+
+
 
 /****************************************************************   */
 
@@ -608,7 +620,6 @@ body {
 
   .logo {
     padding-left: 10%;
-    animation: 2s ease 0s 1 slideInLeft;
   }
 
   .menu-pc {
