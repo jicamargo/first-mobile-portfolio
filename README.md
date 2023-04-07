@@ -51,6 +51,7 @@
 - **["First mobile" design]**
 - **["Contact me form]**
 - **[Responsive Web Design]**
+- **[Animations and transitions]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
