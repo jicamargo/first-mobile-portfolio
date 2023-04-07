@@ -1,3 +1,9 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 /* *************** variables and general settings ************** */
 :root {
   --color-font-menu: #fff5e1;
@@ -6,7 +12,7 @@
   --color-font-title2: #fff5e1;
   --color-font-text1: #fff5e1;
   --color-back-bars: #3c3a39;
-  --color-back-content1: #1c1a19;
+  --color-back-dark: #1c1a19;
   --color-font-title2-dark: #1c1a19;
   --color-font-text-dark: #1c1a19;
   --font-toolbar: 'Inter', serif;
@@ -27,7 +33,7 @@
   --font-color-about: #f4f5f7;
   --transition-transform: transform 0.7s ease;
   --transition-font: font-size 0.7s ease;
-  --card-gradient: linear-gradient(180.45deg, rgba(38, 38, 38, 0) 0.75%, rgba(38, 38, 38, 0.9) 61.94%);
+  --card-gradient: linear-gradient(180deg, rgba(38, 38, 38, 5%) 0%, rgba(38, 38, 38, 0.9) 61.94%);
   --color-font-contactme-text: #172b4d;
   --color-background-clear: #e5e5e5;
   --color-background-textarea: #fbf8f7;
@@ -40,10 +46,8 @@
   --color-thick-Line: #0d151e;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body {
+  font-size: 16px;
 }
 
 /* *************** mobile version - mobile fisrt design ************** */
@@ -51,23 +55,31 @@
 .Toolbar {
   display: flex;
   justify-content: space-between;
+  width: 100%;
   align-items: center;
   background-color: var(--color-back-bars);
-  height: 48px;
+  padding: 1rem;
   padding-right: 1rem;
   font-family: var(--font-toolbar);
   color: var(--color-font-menu);
 }
 
 .Mylogo {
-  font-size: large;
   padding-left: 1.5rem;
+  font-size: 1.2rem;
+  color: var(--color-font-title2);
+  font-family: var(--font-title2);
   background-color: var(--color-back-bars);
   text-decoration: none;
 }
 
 .menu-pc {
   display: none;
+  font-size: 0.9rem;
+  color: var(--color-font-menu);
+  justify-content: flex-end;
+  align-items: center;
+  order: 99;
 }
 
 .menu-mobile {
@@ -82,7 +94,7 @@
 
 .main-frame {
   display: flex;
-  background-color: var(--color-back-content1);
+  background-color: var(--color-back-dark);
   bottom: 0;
 }
 
@@ -97,11 +109,10 @@
 }
 
 .Headline {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+  padding: 0 1.5rem;
 }
 
-.Title1 {
+.big-title {
   color: var(--color-font-title1);
   font-family: var(--font-title1);
   padding-top: 6.5rem;
@@ -110,7 +121,7 @@
   line-height: 105%;
 }
 
-.Title2 {
+.Supportingtext {
   padding-top: 0.7rem;
   color: var(--color-font-title2);
   font-family: var(--font-title2);
@@ -125,18 +136,15 @@
   font-size: 0.85rem;
 }
 
-.iconlist {
-  list-style: none;
-}
-
-.Socialmedia {
+.iconlist_main {
   display: flex;
   justify-content: flex-start;
-  padding: 1rem 0 8.5rem 1rem;
+  list-style: none;
+  padding: 1rem 0 8.5rem 2rem;
+  gap: 1rem;
 }
 
 .socialmediaicon {
-  margin: 0 0.7rem;
   height: 1rem;
   width: auto;
 }
@@ -151,148 +159,86 @@
   transition: var(--transition-transform);
 }
 
-/* ********************** desktop version (768px) ********************** */
-
-@media (min-width: 768px) {
-  .menu-mobile {
-    display: none;
-  }
-
-  .menu-pc {
-    display: flex;
-    font-size: small;
-    color: var(--color-font-menu);
-    justify-content: flex-end;
-    align-items: center;
-    padding-right: 5rem;
-    background-color: var(--color-back-bars);
-    order: 3;
-  }
-
-  .item-menu-pc {
-    padding: 0 1rem 0 1rem;
-    background-color: var(--color-back-bars);
-  }
-
-  .item-menu-pc-icon {
-    background-color: var(--color-back-bars);
-    height: 1rem;
-  }
-
-  .item-menu-pc:hover {
-    transform: translateY(-0.2rem);
-    transition: var(--transition-transform), var(--transition-font);
-    font-size: larger;
-    font-weight: bold;
-    color: var(--color-font-menu-selected);
-  }
-
-  .item-menu-pc-icon:hover {
-    transform: translateY(-0.2rem);
-    transition: var(--transition-transform);
-    font-weight: bold;
-    color: var(--color-font-menu-selected);
-  }
-
-  .Headline {
-    padding-right: 22rem;
-  }
-
-  .content1 {
-    flex-direction: row;
-    background-image: url("../images/background.png");
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: top -2.5rem right;
-    overflow: hidden;
-  }
-
-  .Title1 {
-    font-size: 2.5rem;
-  }
-
-  .Title2 {
-    font-size: 1.2rem;
-  }
-
-  .page_bottom {
-    padding-bottom: 10rem;
-  }
-
-  .Socialmedia {
-    flex-direction: column;
-    align-self: stretch;
-    order: -1;
-    justify-content: center;
-    padding: 1.5rem 0 2rem 0;
-  }
-
-  .socialmediaicon {
-    padding: 0.5rem;
-  }
-
-  .socialmediaicon:hover {
-    transform: translateX(0.5rem);
-    transition: var(--transition-transform);
-    font-size: larger;
-    font-weight: bold;
-    color: var(--color-font-menu-selected);
-  }
-}
-
-/* ********************** end of desktop version ********************** */
-
 /*  ******** Recent Works Section ****** */
 
-.RecentWorks {
+.recentworks_cnt {
   padding: 7.5rem 1.5rem;
   background-color: var(--color-background_clear);
 }
 
-.RecentWorksSection {
-  background-color: var(--color-background_clear);
+.RecentWorksSectionTitle {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 3.25rem;
+  text-align: center;
+  align-items: center;
+}
+
+.Title_MyRecentWorks h3 {
   padding-top: 1rem;
   padding-bottom: 2.5rem;
-  margin-bottom: 3.25rem;
+  font-family: var(--font-title1);
+  font-weight: lighter;
+  color: var(--color-font-title2-dark);
+  font-size: 2.5rem;
+}
+
+.recentworks-line {
+  width: 100%;
   text-align: center;
   border-bottom: 1px solid var(--color-line-div);
 }
 
-.Title_MyRecentWorks {
-  font-family: var(--font-title1);
-  font-weight: lighter;
-  color: var(--color-font-title2-dark);
-  background-color: var(--color-background_clear);
-  font-size: 2.5rem;
-  line-height: 3.25rem;
-}
-
-.line_div {
-  display: block;
-  border-bottom: solid 2px var(--color-back-content1);
-  width: 100%;
-  margin: 4rem auto;
-}
-
 /*************** Grid layout for  project cards ********************/
 
+/* The grid container */
 .grid_works {
+  align-items: center;
+  justify-items: center;
   display: grid;
-  grid-template-columns: auto, 1fr;
+  grid-template-areas:
+    'header'
+    'left'
+    'middle'
+    'right';
+  grid-column-gap: 1rem;
+}
+
+/* Style the left column */
+.header1 {
+  grid-area: header;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.left {
+  grid-area: left;
+}
+
+/* Style the middle column */
+.middle {
+  grid-area: middle;
+}
+
+/* Style the right column */
+.right {
+  grid-area: right;
 }
 
 /* ****** main card work *********** */
-.main_card_cnt {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  padding-top: 1.5rem;
+
+.cnt_info_main_card {
+  width: 100%;
   margin-bottom: 2.8rem;
-  overflow-x: hidden;
+}
+
+.cnt_img_main_card {
+  width: auto;
 }
 
 .main_card_cnt_img {
-  max-width: 100%;
+  width: 100%;
 }
 
 .MainCardTitle {
@@ -311,15 +257,15 @@
 }
 
 .list_feat {
+  width: 100%;
   display: flex;
   flex-direction: row;
-  justify-content: left;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  justify-content: flex-start;
+  margin: 1rem auto;
 }
 
-.lu_btn_main_card {
-  justify-content: left;
+.list_feat > * + * {
+  margin-left: 0.5rem;
 }
 
 .li_btn {
@@ -345,13 +291,16 @@
   font-style: normal;
 }
 
-/******************* Cards for other works *****************************************************/
+/******************* Cards for other works ***************************/
 
 .sec_card_cnt {
   display: flex;
   flex-direction: column-reverse;
   background-size: cover;
   margin-bottom: 1.5rem;
+  min-height: 386px;
+  max-width: 435px;
+  justify-self: center;
 }
 
 /****************************************************************   */
@@ -454,53 +403,27 @@
   cursor: pointer;
 }
 
-/*******************************************************   */
-
-@media (min-width: 768px) {
-  .my_work {
-    padding: 8.13rem 4rem;
-  }
-
-  .main_card_cnt {
-    flex-direction: row;
-  }
-
-  .RecentWorksSection {
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
-    text-align: left;
-  }
-
-  .line_div {
-    margin: 0;
-    width: 60%;
-  }
-}
-
 /* ************** ABOUT SECTION ****************** */
 .back_dark {
-  background-color: var(--color-back-content1);
+  background-color: var(--color-back-dark);
 }
 
-.about {
+.about_cnt {
+  display: flex;
+  flex-direction: row;
   background-image: url("../images/about-me-mobile-img.png");
   background-repeat: no-repeat;
-  background-size: 50%;
+  background-size: 12rem;
   background-position: bottom  right;
   overflow: hidden;
-  height: fit-content;
   padding: 7.5rem 1.5rem;
-  align-content: center;
-  justify-content: center;
+}
+
+.about_info {
+  width: 100%;
 }
 
 .Tittle_about {
-  color: var(--color-font-title1);
-  font-family: var(--font-title1);
-  font-size: 4.5rem;
-  font-weight: 300;
-  line-height: 105%;
   padding-bottom: 1rem;
 }
 
@@ -519,7 +442,7 @@
 
 /************************* SKILLS SECTION**** ********************/
 
-.skills {
+.skills_cnt {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -636,6 +559,8 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
+  list-style: none;
+  gap: 1rem;
 }
 
 .thick-line {
@@ -645,43 +570,239 @@
   border: 4px solid var(--color-thick-Line);
 }
 
-/********************** MEDIA *******************************************/
+/****************** general settings for desktop version elements ************************/
 
-@media (min-width: 768px) {
-  .about {
-    background-size: 20%;
-    background-position: bottom  right;
-    height: fit-content;
-    padding: 7rem 1rem;
+.item-menu-pc {
+  padding: 0 1rem 0 1rem;
+  background-color: var(--color-back-bars);
+}
+
+.item-menu-pc:hover {
+  transform: translateY(-0.2rem);
+  transition: var(--transition-transform), var(--transition-font);
+  font-size: larger;
+  font-weight: bold;
+  color: var(--color-font-menu-selected);
+}
+
+.item-menu-pc-icon {
+  background-color: var(--color-back-bars);
+  height: 1rem;
+}
+
+.item-menu-pc-icon:hover {
+  transform: scale(1.5) translateY(-0.2rem);
+  transition: var(--transition-transform);
+}
+
+/********************** MEDIA QUERIES *********************************/
+
+/****************** desktop version (768px) ***********************/
+
+@media screen and (min-width: 768px) {
+  /********** M.Q menu and first page ****************/
+
+  .menu-mobile {
+    display: none;
+  }
+
+  .logo {
+    padding-left: 10%;
+  }
+
+  .menu-pc {
+    display: flex;
+    padding-right: 10%;
+  }
+
+  .content1 {
+    flex-direction: row;
+    background-image: url("../images/background.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top -2.5rem right;
     overflow: hidden;
+    min-height: 60vw;
+    align-items: center;
   }
 
-  .about_container {
-    display: flex;
-    flex-direction: row;
+  .Headline {
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-right: 45%;
   }
 
-  .skills {
+  .iconlist_main {
+    flex-direction: column;
+    order: -1;
+    justify-content: center;
+    padding: 0 2.25rem;
+    gap: 1rem;
+  }
+
+  .socialmediaicon:hover {
+    transform: translateX(0.5rem);
+    transition: var(--transition-transform);
+    font-size: larger;
+    font-weight: bold;
+    color: var(--color-font-menu-selected);
+  }
+
+  .big-title {
+    padding-top: 0;
+  }
+
+  /********** M.Q recentworkst ****************/
+  .recentworks_cnt {
+    padding: 3.5rem 1.5rem;
+    background-color: var(--color-background_clear);
+  }
+
+  .RecentWorksSectionTitle {
     display: flex;
     flex-direction: row;
-    align-content: center;
-    text-align: center;
-    margin-top: 8rem;
+    flex-grow: 1;
+  }
+
+  .Title_MyRecentWorks {
+    padding-right: 1rem;
+  }
+
+  .Title_MyRecentWorks h3 {
+    padding-top: 1rem;
+    padding-bottom: 1.5rem;
+    width: 20rem;
+  }
+
+  .recentworks-line {
+    width: 1fr;
+  }
+
+  .grid_works {
+    display: grid;
+    grid-template-areas:
+      'header header header'
+      'left middle right';
+    gap: 1rem;
     justify-content: space-around;
-    align-items: flex-start;
   }
 
-  .li_skills {
-    text-align: left;
+  .header1 {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
   }
+
+  .cnt_img_main_card {
+    flex-basis: 70%;
+  }
+
+  .cnt_info_main_card {
+    flex-basis: 30%;
+    padding: 0 1.5rem;
+  }
+
+  .sec_card_cnt {
+    /* margin: 1.3rem 1rem; */
+    min-height: 386px;
+    max-width: 435px;
+    justify-self: center;
+  }
+
+  /********************** about *******************/
+  .about_cnt {
+    background-image: url("../images/about-me-desktop-img.svg");
+    background-repeat: no-repeat;
+    background-size: 50%;
+    background-position: top 50% right;
+    overflow: hidden;
+    padding: 0 1.5rem;
+    align-items: center;
+    min-height: 60vw;
+  }
+
+  .about_info {
+    width: 50%;
+  }
+
+  .resume_btn {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  /******************* skills ****************/
+  .skill_col {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .ul_skill {
+    width: 33%;
+  }
+
+  /********************** contact me *********************/
 
   .contact_cnt {
-    grid-template-columns: repeat(2, 1fr);
-    padding: 8rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 4.5rem 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
   }
 
-  .iconlist_footer {
-    flex-direction: row;
-    text-align: center;
+  .ContactDescript {
+    text-align: left;
+    margin: 0 1rem;
+  }
+
+  .form_input_fields {
+    padding-top: 0;
+    margin: 0 1rem;
+  }
+
+  .project_btn_submit {
+    align-self: flex-start;
+  }
+
+  /************* footer ************/
+  .footer-icon:hover {
+    transform: translateY(-0.5rem);
+    transition: var(--transition-transform);
+    font-size: larger;
+    font-weight: bold;
+    color: var(--color-font-menu-selected);
+  }
+}
+
+/*********************** high resolution ***********************/
+
+/************** only increases a litle font sizes **************/
+
+@media screen and (min-width: 992px) {
+  .menu-mobile {
+    display: none;
+  }
+
+  .Toolbar {
+    height: 4.5rem;
+  }
+
+  .socialmediaicon {
+    height: 1.5rem;
+    width: auto;
+  }
+
+  .big-title {
+    font-size: 4.5rem;
+  }
+
+  .Supportingtext {
+    font-size: 2rem;
+  }
+
+  .Simpletext {
+    padding-top: 0.7rem;
+    font-size: 1.25rem;
   }
 }
