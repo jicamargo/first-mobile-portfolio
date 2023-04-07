@@ -62,7 +62,7 @@ body {
   padding-right: 1rem;
   font-family: var(--font-toolbar);
   color: var(--color-font-menu);
-  animation: slideInLeft 1s  ;
+  animation: slideInLeft 1s;
 }
 
 .logo {
@@ -312,8 +312,6 @@ body {
 .sec_card_cnt:hover {
   scale: 1.05;
 }
-
-
 
 /****************************************************************   */
 
@@ -793,6 +791,7 @@ body {
   0% {
     transform: translateX(-100%);
   }
+
   100% {
     transform: translateX(0);
   }
