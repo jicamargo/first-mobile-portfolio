@@ -191,11 +191,6 @@ body {
 
 /*************** Grid layout for  project cards ********************/
 
-/* .grid_works {
-  display: grid;
-  grid-template-columns: auto, 1fr;
-} */
-
 /* The grid container */
 .grid_works {
   align-items: center;
@@ -206,8 +201,7 @@ body {
     'left'
     'middle'
     'right';
-
-  /* grid-column-gap: 10px; - if you want gap between the columns */
+  grid-column-gap: 1rem; 
 }
 
 /* Style the left column */
@@ -658,7 +652,11 @@ body {
     padding-top: 0;
   }
 
-  /********** M.Q recentworks_cnt ****************/
+  /********** M.Q recentworkst ****************/
+  .recentworks_cnt {
+    padding: 3.5rem 1.5rem;
+    background-color: var(--color-background_clear);
+  }
 
   .RecentWorksSectionTitle {
     display: flex;
@@ -685,6 +683,8 @@ body {
     grid-template-areas:
       'header header header'
       'left middle right';
+    gap: 1rem;
+    justify-content: space-around;
   }
 
   .header1 {
@@ -703,7 +703,7 @@ body {
   }
 
   .sec_card_cnt {
-    margin: 1.3rem 1rem;
+    /* margin: 1.3rem 1rem; */
     min-height: 386px;
     max-width: 435px;
     justify-self: center;
