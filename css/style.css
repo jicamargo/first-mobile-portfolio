@@ -608,6 +608,7 @@ body {
 
   .logo {
     padding-left: 10%;
+    animation: 2s ease 0s 1 slideInLeft;
   }
 
   .menu-pc {
@@ -772,6 +773,17 @@ body {
     font-size: larger;
     font-weight: bold;
     color: var(--color-font-menu-selected);
+  }
+}
+
+/** Animations **/
+
+@keyframes slideInLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 
