@@ -66,7 +66,7 @@
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-Open this site in your browser and enjoy our content.
+Open this site in your browser and enjoy.
 
 ### Prerequisites
 
