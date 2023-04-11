@@ -44,6 +44,7 @@
   --color-btn-disabled: #f4f1f0;
   --color-border-inputfield: #dbd8d7;
   --color-thick-Line: #0d151e;
+  --color-background-field-focus: #f0d2c0;
 }
 
 body {
@@ -535,6 +536,10 @@ body {
   width: 100%;
   padding: 1rem;
   font-size: 1rem;
+}
+
+.input_field:focus, .text_area:focus {
+  background-color: var(--color-background-field-focus);
 }
 
 .text_area {
