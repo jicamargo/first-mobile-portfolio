@@ -16,6 +16,7 @@
   - [⭐️ Key Features ](#️-key-features-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
+    - [walkthrough video](#walkthrough-video)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
@@ -67,6 +68,10 @@
 ## 💻 Getting Started <a name="getting-started"></a>
 
 Open this site in your browser and enjoy.
+
+### Walkthrough Video
+
+[View Walkthrough Video](https://www.loom.com/share/769b77a8efcf42198808fac6cbf7060d)
 
 ### Prerequisites
 
