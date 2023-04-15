@@ -1,7 +1,6 @@
 
 	// objeto para propiedades
 	var propMenu ={
-
 		burguer_menu: document.getElementById('burguer_menu'),
 		slideMenu: document.getElementById('slidemenu'),
 	 	menu_activo: false,
