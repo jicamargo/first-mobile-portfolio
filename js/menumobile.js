@@ -1,13 +1,13 @@
-let burguer_menu = document.getElementById('burguer_menu');
-let	slideMenu = document.getElementById('slidemenu');
-let	elem_menu = document.querySelectorAll('#slidemenu a');
+const BurguerMenu = document.getElementById('BurguerMenu')
+const slideMenu = document.getElementById('slidemenu')
+const elemMenu = document.querySelectorAll('#slidemenu a')
 
-function toggleMenu() {
-	slideMenu.classList.toggle("active");
- }
+function toggleMenu () {
+  slideMenu.classList.toggle('active')
+}
 
-burguer_menu.addEventListener('click', toggleMenu); 
+BurguerMenu.addEventListener('click', toggleMenu)
 
-for (let i = 0; i < elem_menu.length; i++) {
-		elem_menu[i].addEventListener('click', toggleMenu);
+for (let i = 0; i < elemMenu.length; i + 1) {
+  elemMenu[i].addEventListener('click', toggleMenu)
 }
