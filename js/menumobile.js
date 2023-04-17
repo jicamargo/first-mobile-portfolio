@@ -8,6 +8,6 @@ function toggleMenu() {
 
 menuBur.addEventListener('click', toggleMenu);
 
-for (let i = 0; i < elemMenu.length; i = i + 1) {
+for (let i = 0; i < elemMenu.length; i = i++) {
   elemMenu[i].addEventListener('click', toggleMenu);
 }
