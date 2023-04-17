@@ -24,20 +24,17 @@
           <img href="#contact" class="item-menu-icon" src="images/mail_icon.png" alt="email icon">
         </div>
       </div>
-      <nav class="menu-mobile">
-          <img class="burguer-menu" src="images/burguer_menu_icon.png" alt="burguer menu icon">
+      <nav id="burguer_menu" class="burguer-menu">
+          <img class="burguer-menu-icon" src="images/burguer_menu_icon.png" alt="burguer menu icon">
       </nav>
     </div>
 
     <div class="menu-bar-movil">
-      <nav class="menu-principal">
-        <a href="#" class="item-menu">Home</a>
-        <a href="#portfolio" class="item-menu">Portfolio</a>
-        <a href="#about" class="item-menu">About</a>
-        <a href="#contact" class="item-menu-group">
-          <a class="item-menu">Contact</a>
-          <img class="item-menu-icon" src="images/mail_icon.png" alt="email icon">
-        </a>
+      <nav class="slidemenu" id="slidemenu">
+        <a class="btn-close-slide-menu">X</a>
+        <a href="#portfolio" class="item-menu-mobile">Portfolio</a>
+        <a href="#about" class="item-menu-mobile">About</a>
+        <a href="#contact" class="item-menu-mobile">Contact</a>
       </nav>
 		</div>  <!-- menu movil-->    
   </header>
@@ -232,23 +229,23 @@
     </ul>              
   </section>
 
-<!-- section  contact form -->
-<section id="contact" class="contact_cnt">
-  <div class="grid_text">
-    <h4 class="ContactDescript">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h4>
-  </div>
-  <form action="https://formspree.io/f/xoqzkbpj" method="post">
-    <div class="form_input_fields">
-      <input class="input_field" type="text" name="full_name" placeholder="Full name" maxlength="30" required>
-      <input class="input_field" type="email" name="email" placeholder="Email address" required>
-      <textarea class="text_area" name="message" placeholder="Write me something" maxlength="500" required></textarea>        
-      <input class="SeeProjectBtn BtnClass project_btn_submit" type="submit" value="Get in touch"> 
+  <!-- section  contact form -->
+  <section id="contact" class="contact_cnt">
+    <div class="grid_text">
+      <h4 class="ContactDescript">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h4>
     </div>
-  </form>
-</section>
+    <form action="https://formspree.io/f/xoqzkbpj" method="post">
+      <div class="form_input_fields">
+        <input class="input_field" type="text" name="full_name" placeholder="Full name" maxlength="30" required>
+        <input class="input_field" type="email" name="email" placeholder="Email address" required>
+        <textarea class="text_area" name="message" placeholder="Write me something" maxlength="500" required></textarea>        
+        <input class="SeeProjectBtn BtnClass project_btn_submit" type="submit" value="Get in touch"> 
+      </div>
+    </form>
+  </section>
 
- <!-- section Footer -->
- <footer class="footer">
+  <!-- section Footer -->
+  <footer class="footer">
     <ul class="iconlist_footer">
       <li><a href=""><img class="socialmediaicon footer-icon" src="images/icon-git-footer.png" alt="Git-Hub Icon"></a></li>
       <li><a href=""><img class="socialmediaicon footer-icon" src="images/icon-linkedin-footer.png" alt="Twitter icon"></a></li>
@@ -260,4 +257,8 @@
     <div class="final-line">
     </div>
   </footer>
+
+  <script src="js/menumobile.js"></script>
 </body>
+
+</html>
