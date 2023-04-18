@@ -361,33 +361,6 @@ body {
   scale: 1.05;
 }
 
-/****************************************************************   */
-
-.work-1 {
-  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
-  background-size: cover;
-}
-
-.work-2 {
-  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
-}
-
-.work-3 {
-  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
-}
-
-.work-4 {
-  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
-}
-
-.work-5 {
-  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
-}
-
-.work-6 {
-  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
-}
-
 /* ************** Fonts and config for cards ******************* */
 .cnt_info_card {
   padding-top: 5rem;
