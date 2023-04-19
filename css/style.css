@@ -45,12 +45,11 @@
   --color-border-inputfield: #dbd8d7;
   --color-thick-Line: #0d151e;
   --color-background-field-focus: #f0d2c0;
-  --color-li_btn_popup : #3C3A39;
+  --color-li_btn_popup: #3c3a39;
   --font-popup-title1: 'Roboto', serif;
   --font-popup-title2: 'Roboto', serif;
   --font-popup-li: 'Poppins', serif;
   --font-Popup-text: 'Inter', serif;
-  
 }
 
 body {
@@ -866,7 +865,7 @@ body {
 
 .cntInfoPopup {
   width: 90vw;
-  height: 80vh;
+  height: 85vh;
   background: var(--color-background_clear);
   margin: auto;
   margin-top: 4rem;
@@ -927,6 +926,7 @@ body {
   justify-content: flex-start;
   margin: 1rem auto;
 }
+
 .list_feat_popup > * + * {
   margin-left: 0.2rem;
 }
@@ -961,7 +961,6 @@ body {
   margin-left: 0.4rem;
 }
 
-
 /********************** MEDIA QUERIES FOR POPUP WINDOW *********************************/
 
 /****************** desktop version (768px) ***********************/
@@ -973,7 +972,7 @@ body {
     margin-top: 4rem;
     padding: 1.5rem;
   }
-   
+
   .popup-columns {
     display: flex;
   }
@@ -985,7 +984,7 @@ body {
   .PopupImg {
     max-width: 700px;
   }
-  
+
   .popup-col2 {
     display: flex;
     flex-direction: column;
@@ -999,9 +998,9 @@ body {
     font-size: 2rem;
     font-weight: lighter;
     color: var(--color-main-card-title);
-    margin-top: 0.0rem;
+    margin-top: 0;
   }
-  
+
   .PopupTitle2 {
     font-family: var(--font-popup-title2);
     font-size: 1.5rem;
@@ -1009,7 +1008,7 @@ body {
     color: var(--color-main-card-title);
     padding-bottom: 1rem;
   }
-  
+
   .PopupDescrip {
     padding-top: 0;
     line-height: 1.4rem;
