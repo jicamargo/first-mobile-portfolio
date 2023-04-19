@@ -56,7 +56,7 @@ form.addEventListener('submit', (event) => {
 
   // if valid, submit the form.
   if (nameValid && emailValid && msgValid) {
-    console.log('validation passed, form submitted');
-    // form.submit();
+    // console.log('validation passed, form submitted');
+    form.submit();
   }
 });
