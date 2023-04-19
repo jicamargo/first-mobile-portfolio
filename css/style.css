@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* *************** variables and general settings ************** */
 :root {
   --color-font-menu: #fff5e1;
@@ -45,6 +49,11 @@
   --color-border-inputfield: #dbd8d7;
   --color-thick-Line: #0d151e;
   --color-background-field-focus: #f0d2c0;
+  --color-li_btn_popup: #3c3a39;
+  --font-popup-title1: 'Roboto', serif;
+  --font-popup-title2: 'Roboto', serif;
+  --font-popup-li: 'Poppins', serif;
+  --font-Popup-text: 'Inter', serif;
 }
 
 body {
@@ -361,33 +370,6 @@ body {
   scale: 1.05;
 }
 
-/****************************************************************   */
-
-.work-1 {
-  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
-  background-size: cover;
-}
-
-.work-2 {
-  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
-}
-
-.work-3 {
-  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
-}
-
-.work-4 {
-  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
-}
-
-.work-5 {
-  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
-}
-
-.work-6 {
-  background: var(--card-gradient), url("../images/img-ph1.png") no-repeat center;
-}
-
 /* ************** Fonts and config for cards ******************* */
 .cnt_info_card {
   padding-top: 5rem;
@@ -567,8 +549,6 @@ body {
 }
 
 .form_input_fields {
-  display: flex;
-  flex-direction: column;
   padding-top: 3rem;
   align-content: center;
   align-items: center;
@@ -880,5 +860,170 @@ body {
   .Simpletext {
     padding-top: 0.7rem;
     font-size: 1.25rem;
+  }
+}
+
+/******************* Popup Window Style ********************/
+
+.cntInfoPopup {
+  width: 90vw;
+  height: 85vh;
+  background: var(--color-background_clear);
+  margin: auto;
+  margin-top: 4rem;
+  padding: 1.5rem;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cntInfoPopup::-webkit-scrollbar {
+  display: none;
+}
+
+.btnClosePopup {
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+}
+
+.popup-col1 {
+  text-align: center;
+}
+
+.popupImgCnt {
+  width: auto;
+}
+
+.PopupImg {
+  width: 100%;
+  max-width: 500px;
+}
+
+.PopupTitle1 {
+  font-family: var(--font-popup-title1);
+  font-size: 2rem;
+  font-weight: lighter;
+  color: var(--color-main-card-title);
+  margin-top: 0.5rem;
+}
+
+.PopupTitle2 {
+  font-family: var(--font-popup-title2);
+  font-size: 2rem;
+  font-weight: lighter;
+  color: var(--color-main-card-title);
+  padding-bottom: 2rem;
+}
+
+.PopupDescrip {
+  font-size: 1rem;
+  font-family: var(--font-Popup-text);
+  color: var(--color-main-card-text);
+  padding-top: 1.5rem;
+}
+
+.list_feat_popup {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 1rem auto;
+}
+
+.list_feat_popup > * + * {
+  margin-left: 0.2rem;
+}
+
+.li_btn_popup {
+  list-style: none;
+  font-family: var(--font-popup-li);
+  color: var(--color-li_btn_popup);
+  font-weight: bolder;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.8rem;
+  border: solid 1px var(--color-li_btn_popup);
+  margin-right: 0.8rem;
+  font-style: normal;
+}
+
+.cntBtnPopup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cntBtnPopup .BtnClass {
+  display: flex;
+  padding: 0.7rem;
+  margin-top: 1rem;
+  justify-content: space-around;
+}
+
+.icon-btn {
+  height: 1.5rem;
+  margin-left: 0.4rem;
+}
+
+/********************** MEDIA QUERIES FOR POPUP WINDOW *********************************/
+
+/****************** desktop version (768px) ***********************/
+
+@media screen and (min-width: 768px) {
+  .cntInfoPopup {
+    width: 80vw;
+    height: 80vh;
+    margin-top: 4rem;
+    padding: 1.5rem;
+  }
+
+  .popup-columns {
+    display: flex;
+  }
+
+  .popup-col1 {
+    width: 60%;
+  }
+
+  .PopupImg {
+    max-width: 700px;
+  }
+
+  .popup-col2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    width: 40%;
+    justify-content: space-between;
+  }
+
+  .PopupTitle1 {
+    font-family: var(--font-popup-title1);
+    font-size: 2rem;
+    font-weight: lighter;
+    color: var(--color-main-card-title);
+    margin-top: 0;
+  }
+
+  .PopupTitle2 {
+    font-family: var(--font-popup-title2);
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: var(--color-main-card-title);
+    padding-bottom: 1rem;
+  }
+
+  .PopupDescrip {
+    padding-top: 0;
+    line-height: 1.4rem;
   }
 }
