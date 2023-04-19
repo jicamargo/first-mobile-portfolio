@@ -93,7 +93,7 @@ const arrWorks = [
 const gridWorks = document.getElementById('grid_works');
 let popupContainer = null;
 let div = null;
-let cuerpoDom = null;
+let bodyDom = null;
 let card = null;
 
 for (let i = 0; i < arrWorks.length; i += 1) {
@@ -142,20 +142,20 @@ for (let i = 0; i < arrWorks.length; i += 1) {
   gridWorks.appendChild(div);
 }
 
-function cerrarModal() {
-  cuerpoDom.removeChild(popupContainer);
+function closeModal() {
+  bodyDom.removeChild(popupContainer);
 }
 
 function visitSite(url) {
   window.open(url);
-  cerrarModal();
+  closeModal();
 }
 
 /* creates a pop-up window with the respective button's card clicked info */
 
 function popupWindow(card) {
-  cuerpoDom = document.getElementById('body');
-  cuerpoDom.appendChild(document.createElement('div')).setAttribute('id', 'popupContainer');
+  bodyDom = document.getElementById('body');
+  bodyDom.appendChild(document.createElement('div')).setAttribute('id', 'popupContainer');
   popupContainer = document.getElementById('popupContainer');
   popupContainer.style.width = '100%';
   popupContainer.style.height = '100%';
@@ -201,13 +201,13 @@ function popupWindow(card) {
 
   popupContainer.appendChild(div).setAttribute('id', 'modal');
 
-  const BtnClose = document.getElementById('btnClosePopup');
-  const BtnLive = document.getElementById('btnLive');
-  const BtnSrc = document.getElementById('btnSrc');
+  const btnClose = document.getElementById('btnClosePopup');
+  const btnLive = document.getElementById('btnLive');
+  const btnSrc = document.getElementById('btnSrc');
 
-  BtnClose.addEventListener('click', cerrarModal);
-  BtnLive.addEventListener('click', () => { visitSite(card.liveVersion); });
-  BtnSrc.addEventListener('click', () => { visitSite(card.source); });
+  btnClose.addEventListener('click', closeModal);
+  btnLive.addEventListener('click', () => { visitSite(card.liveVersion); });
+  btnSrc.addEventListener('click', () => { visitSite(card.source); });
 }
 
 /* ********************************************** */
