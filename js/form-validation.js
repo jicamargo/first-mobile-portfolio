@@ -30,7 +30,7 @@ function validateEmail(inputElem, FieldIsEmptyMsg, invalidMsg) {
     return false;
   }
   // validate email format
-  const emailRegex =		/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const emailRegex = /^(([^<>()\[]\\.,;:\s@"]+(\.[^<>()\[]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   const email = inputElem.value.trim();
   if (!emailRegex.test(email)) {
@@ -56,7 +56,6 @@ form.addEventListener('submit', (event) => {
 
   // if valid, submit the form.
   if (nameValid && emailValid && msgValid) {
-    // console.log('validation passed, form submitted');
     form.submit();
   }
 });
