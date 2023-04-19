@@ -1,25 +1,28 @@
 /* this module You use an array to store all of the information for all projects */
-/* each project has: name, description, featured image, technologies, link to live version, link to source */
+/* each project has: name, ShortDescrip, featured image, technologies, link to live version, link to source */
 
 const arrWorks = [
   { 
     id : 'project-0',
     name : 'Multi-Post Stories', 
     name2 : '', 
-    description : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    ShortDescrip : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
+    LongDescrip : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
     featureImage : './images/card1_img.png',
     alternateTextImage : 'header-main-project image.',
     technologies : ['CSS','HTML', 'Boostrap', 'Ruby'],
     liveVersion : 'https://jicamargo.github.io/first-mobile-portfolio/',
     source : 'https://github.com/jicamargo/first-mobile-portfolio'
   },
+  
   { 
     id : 'project-1',
     name : 'Profesional Art 1', 
     name2 : 'Printing Data', 
-    description : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    featureImage : '../images/img-ph1.png',
-    alternateTextImage : 'secondary project description image.',
+    ShortDescrip : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
+    LongDescrip : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    featureImage : '../images/snapshoot-project1.png',
+    alternateTextImage : 'secondary project ShortDescrip image.',
     technologies : ['CSS', 'Boostrap', 'Ruby'],
     liveVersion : 'https://jicamargo.github.io/first-mobile-portfolio/',
     source : 'https://github.com/jicamargo/first-mobile-portfolio'
@@ -28,9 +31,10 @@ const arrWorks = [
     id : 'project-2',
     name : 'Profesional Art 2', 
     name2 : 'Printing Data', 
-    description : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    featureImage : '../images/img-ph2.png',
-    alternateTextImage : 'secondary project description image.',
+    ShortDescrip : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
+    LongDescrip : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    featureImage : '../images/snapshoot-project1.png',
+    alternateTextImage : 'secondary project ShortDescrip image.',
     technologies : ['CSS', 'Boostrap', 'Ruby'],
     liveVersion : 'https://jicamargo.github.io/first-mobile-portfolio/',
     source : 'https://github.com/jicamargo/first-mobile-portfolio'
@@ -39,9 +43,10 @@ const arrWorks = [
     id : 'project-3',
     name : 'Profesional Art 3', 
     name2 : 'Printing Data', 
-    description : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    featureImage : '../images/img-ph3.png',
-    alternateTextImage : 'secondary project description image.',
+    ShortDescrip : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
+    LongDescrip : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    featureImage : '../images/snapshoot-project1.png',
+    alternateTextImage : 'secondary project ShortDescrip image.',
     technologies : ['CSS', 'Boostrap', 'Ruby'],
     liveVersion : 'https://jicamargo.github.io/first-mobile-portfolio/',
     source : 'https://github.com/jicamargo/first-mobile-portfolio'
@@ -50,9 +55,10 @@ const arrWorks = [
     id : 'project-4',
     name : 'Profesional Art 4', 
     name2 : 'Printing Data', 
-    description : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    featureImage : '../images/img-ph3.png',
-    alternateTextImage : 'secondary project description image.',
+    ShortDescrip : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
+    LongDescrip : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    featureImage : '../images/snapshoot-project1.png',
+    alternateTextImage : 'secondary project ShortDescrip image.',
     technologies : ['CSS', 'Boostrap', 'Ruby'],
     liveVersion : 'https://jicamargo.github.io/first-mobile-portfolio/',
     source : 'https://github.com/jicamargo/first-mobile-portfolio'
@@ -61,9 +67,10 @@ const arrWorks = [
     id : 'project-5',
     name : 'Profesional Art 5', 
     name2 : 'Printing Data', 
-    description : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    featureImage : '../images/img-ph3.png',
-    alternateTextImage : 'secondary project description image.',
+    ShortDescrip : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
+    LongDescrip : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    featureImage : '../images/snapshoot-project1.png',
+    alternateTextImage : 'secondary project ShortDescrip image.',
     technologies : ['CSS', 'Boostrap', 'Ruby'],
     liveVersion : 'https://jicamargo.github.io/first-mobile-portfolio/',
     source : 'https://github.com/jicamargo/first-mobile-portfolio'
@@ -72,9 +79,10 @@ const arrWorks = [
     id : 'project-6',
     name : 'Profesional Art 6', 
     name2 : 'Printing Data', 
-    description : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    featureImage : '../images/img-ph3.png',
-    alternateTextImage : 'secondary project description image.',
+    ShortDescrip : "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
+    LongDescrip : "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    featureImage : '../images/snapshoot-project1.png',
+    alternateTextImage : 'secondary project ShortDescrip image.',
     technologies : ['CSS', 'Boostrap', 'Ruby'],
     liveVersion : 'https://jicamargo.github.io/first-mobile-portfolio/',
     source : 'https://github.com/jicamargo/first-mobile-portfolio'
@@ -83,8 +91,9 @@ const arrWorks = [
 
 
 const gridWorks = document.getElementById('grid_works');
-
+let popup_container = null;
 let div = null;
+let cuerpoDom = null;
 
 for (let i = 0; i < arrWorks.length; i += 1) {
   card = arrWorks[i];
@@ -99,12 +108,12 @@ for (let i = 0; i < arrWorks.length; i += 1) {
     div.id = card.id;
     div.innerHTML = 
     `<div class="cnt_img_main_card">
-    <img class="main_card_cnt_img" src="${card.featureImage}" alt="${card.alternateTextImage}">
+       <img class="main_card_cnt_img" src="${card.featureImage}" alt="${card.alternateTextImage}">
     </div>
     <div class="cnt_info_main_card ">
     <h3 class="MainCardTitle Title2_dark">${card.name}</h3>
-    <p class="MainCardDescrip">${card.description}</p>
-    <ul class="list_feat lu_btn_main_card">` +
+    <p class="MainCardDescrip">${card.ShortDescrip}</p>
+    <ul class="list_feat ">` +
     card.technologies.map(tech => `
       <li class="li_btn">${tech}</li>`).join(' ') + 
       `</ul>
@@ -121,7 +130,7 @@ for (let i = 0; i < arrWorks.length; i += 1) {
         <div class="cnt_info_card">
           <h1 class="Title1_card">${card.name}</h1>
           <h2 class="Title2_card">${card.name2}</h2>
-          <p class="CardDescrip">${card.description}</p>
+          <p class="CardDescrip">${card.ShortDescrip}</p>
           <ul class="list_feat list_card_gral">` +
           card.technologies.map(tech => `
             <li class="li_btn_2">${tech}</li>`).join(' ') + 
@@ -154,8 +163,60 @@ function clickBtnMethod(event) {
   popupWindow(arrWorks[indexProj]);
 }
 
-function popupWindow (cardInfo) {
+function popupWindow (card) {
   console.log("clic en el projecto ");
-  console.log(cardInfo);
 
+  cuerpoDom = document.getElementsByTagName('body')[0];
+
+  cuerpoDom.appendChild(document.createElement('div')).setAttribute('id','popup_container');
+
+  popup_container = document.getElementById('popup_container') ;
+
+  popup_container.style.width = '100%';
+  popup_container.style.height = '100%';
+  popup_container.style.position = 'fixed';
+  popup_container.style.zIndex  = '99';
+  popup_container.style.background = 'rgba(0,0,0,0.4)';
+  popup_container.style.backdropFilter = 'blur(4px)';
+  popup_container.style.top = '0';
+  popup_container.style.left = '0';
+  
+  /* *********************************** */
+  div = document.createElement('div');
+
+  div.classList = 'cntInfoPopup';
+  div.id = card.id;
+  div.innerHTML = 
+    `<a id="btnClosePopup" class="btnClosePopup">
+        <img class="btn-close-icon" src="images/close-icon.png" alt="Close menu icon.">
+    </a> 
+      <h1 class="PopupTitle1 Title2_dark">${card.name}</h1>
+      <h2 class="PopupTitle2 Title2_card">${card.name2}</h2>
+      <ul class="list_feat_popup ">` +
+        card.technologies.map(tech => `
+        <li class="li_btn_popup">${tech}</li>`).join(' ') + 
+      `</ul>
+      <div class="popupImgCnt">
+        <img class="PopupImg" src="${card.featureImage}" alt="${card.alternateTextImage}">
+      </div>
+      <p class="PopupDescrip">${card.LongDescrip}</p>
+      <ul class="cntBtnPopup">
+        <li id="btn-live-${card.id}" class="SeeProjectBtn BtnClass btnSeeLive" href="${card.liveVersion}">
+          <div>See live</div>
+          <img class="icon-btn" src="./images/icon-btn-live.png"></li>
+        <li id="btn-src-${card.id}" class="SeeProjectBtn BtnClass btnSeeSource" href="${card.source}">
+          <div>See source</div>
+          <img class="icon-btn" src="./images/icon-btn-git.png"></li>
+        </ul>
+    `;
+
+  /* ********************************************** */
+  
+  popup_container.appendChild(div).setAttribute('id','modal');
+  let BtnClose = document.getElementById('btnClosePopup');
+  BtnClose.addEventListener('click', cerrarModal);
+}
+
+function cerrarModal () {
+  cuerpoDom.removeChild(popup_container);
 }

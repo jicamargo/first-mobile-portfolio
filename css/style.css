@@ -45,6 +45,12 @@
   --color-border-inputfield: #dbd8d7;
   --color-thick-Line: #0d151e;
   --color-background-field-focus: #f0d2c0;
+  --color-li_btn_popup : #3C3A39;
+  --font-popup-title1: 'Roboto', serif;
+  --font-popup-title2: 'Roboto', serif;
+  --font-popup-li: 'Poppins', serif;
+  --font-Popup-text: 'Inter', serif;
+  
 }
 
 body {
@@ -854,4 +860,99 @@ body {
     padding-top: 0.7rem;
     font-size: 1.25rem;
   }
+}
+
+/******************* Popup Window Style ********************/
+
+.cntInfoPopup {
+  width: 90vw;
+  height: 90vh;
+  background: var(--color-background_clear);
+  margin: auto;
+  margin-top: 4rem;
+  padding: 1.5rem;
+  /* display: flex; */
+  /* flex-direction: column; */
+}
+
+.btnClosePopup {
+  z-index: 99;
+  width: 2rem;
+  height: 2rem;
+  margin: 1rem;
+  text-align: center;
+  cursor: pointer;
+  float: right;
+}
+
+.popupImgCnt {
+  width: auto;
+}
+
+.PopupImg {
+  width: 100%;
+}
+
+.PopupTitle1 {
+  font-family: var(--font-popup-title1);
+  font-size: 2rem;
+  font-weight: lighter;
+  color: var(--color-main-card-title);
+  margin-top: 0.5rem;
+}
+
+.PopupTitle2 {
+  font-family: var(--font-popup-title2);
+  font-size: 2rem;
+  font-weight: lighter;
+  color: var(--color-main-card-title);
+  padding-bottom: 2rem;
+}
+
+.PopupDescrip {
+  font-size: 1rem;
+  font-family: var(--font-Popup-text);
+  color: var(--color-main-card-text);
+  padding: 1.5rem 0;
+}
+
+.list_feat_popup {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: flex-start;
+  margin: 1rem auto;
+}
+.list_feat_popup > * + * {
+  margin-left: 0.2rem;
+}
+
+.li_btn_popup {
+  list-style: none;
+  font-family: var(--font-popup-li);
+  color: var(--color-li_btn_popup);
+  font-weight: bolder;
+  font-size: 0.85rem;
+  padding: 0.5rem 0.8rem;
+  border: solid 1px var(--color-li_btn_popup);
+  margin-right: 0.8rem;
+  font-style: normal;
+}
+
+.cntBtnPopup {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.cntBtnPopup .BtnClass {
+  display: flex;
+  padding: 0.7rem;
+  justify-content: space-around;
+}
+
+.icon-btn {
+  height: 1.5rem;
+  margin-left: 0.4rem;
 }
