@@ -866,13 +866,11 @@ body {
 
 .cntInfoPopup {
   width: 90vw;
-  height: 90vh;
+  height: 80vh;
   background: var(--color-background_clear);
   margin: auto;
   margin-top: 4rem;
   padding: 1.5rem;
-  /* display: flex; */
-  /* flex-direction: column; */
 }
 
 .btnClosePopup {
@@ -885,12 +883,17 @@ body {
   float: right;
 }
 
+.popup-col1 {
+  text-align: center;
+}
+
 .popupImgCnt {
   width: auto;
 }
 
 .PopupImg {
   width: 100%;
+  max-width: 500px;
 }
 
 .PopupTitle1 {
@@ -913,7 +916,7 @@ body {
   font-size: 1rem;
   font-family: var(--font-Popup-text);
   color: var(--color-main-card-text);
-  padding: 1.5rem 0;
+  padding-top: 1.5rem;
 }
 
 .list_feat_popup {
@@ -949,10 +952,66 @@ body {
 .cntBtnPopup .BtnClass {
   display: flex;
   padding: 0.7rem;
+  margin-top: 1rem;
   justify-content: space-around;
 }
 
 .icon-btn {
   height: 1.5rem;
   margin-left: 0.4rem;
+}
+
+
+/********************** MEDIA QUERIES FOR POPUP WINDOW *********************************/
+
+/****************** desktop version (768px) ***********************/
+
+@media screen and (min-width: 768px) {
+  .cntInfoPopup {
+    width: 80vw;
+    height: 80vh;
+    margin-top: 4rem;
+    padding: 1.5rem;
+  }
+   
+  .popup-columns {
+    display: flex;
+  }
+
+  .popup-col1 {
+    width: 60%;
+  }
+
+  .PopupImg {
+    max-width: 700px;
+  }
+  
+  .popup-col2 {
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+    width: 40%;
+    justify-content: space-between;
+  }
+
+  .PopupTitle1 {
+    font-family: var(--font-popup-title1);
+    font-size: 2rem;
+    font-weight: lighter;
+    color: var(--color-main-card-title);
+    margin-top: 0.0rem;
+  }
+  
+  .PopupTitle2 {
+    font-family: var(--font-popup-title2);
+    font-size: 1.5rem;
+    font-weight: lighter;
+    color: var(--color-main-card-title);
+    padding-bottom: 1rem;
+  }
+  
+  .PopupDescrip {
+    padding-top: 0;
+    line-height: 1.4rem;
+  }
 }
