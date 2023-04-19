@@ -54,7 +54,7 @@ html {
   --font-popup-title2: 'Roboto', serif;
   --font-popup-li: 'Poppins', serif;
   --font-Popup-text: 'Inter', serif;
-  --color-error-msg: #ff0000;
+  --color-error-msg: #f00;
 }
 
 body {
