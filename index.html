@@ -123,16 +123,16 @@
     <form id="contact-form" action="https://formspree.io/f/xoqzkbpj" method="post">
       <div class="form_input_fields">
         <div class="field">
-          <input class="input_field" type="text" name="full_name" placeholder="Full name" maxlength="30" required>
-          <lblErrorMsg></lblErrorMsg>
+          <input class="input_field" type="text" name="full_name" placeholder="Full name" maxlength="30">
+          <lblErrorMsg class="lblErrorMsg">.</lblErrorMsg>
         </div>
         <div class="field">
-          <input class="input_field" type="email" name="email" placeholder="Email address" required>
-          <lblErrorMsg></lblErrorMsg>
+          <input class="input_field" type="email" name="email" placeholder="Email address">
+          <lblErrorMsg class="lblErrorMsg"> </lblErrorMsg>
         </div>
         <div class="field">
-          <textarea class="text_area" name="message" placeholder="Write me something" maxlength="500" required></textarea>        
-          <lblErrorMsg></lblErrorMsg>
+          <textarea class="text_area" name="message" placeholder="Write me something" maxlength="500"></textarea>        
+          <lblErrorMsg class="lblErrorMsg"> </lblErrorMsg>
         </div>
         <input class="SeeProjectBtn BtnClass project_btn_submit" type="submit" value="Get in touch"> 
       </div>
@@ -154,5 +154,6 @@
   </footer>
   <script src="js/menumobile.js"></script>
   <script src="js/project-cards.js"></script>
+  <script src="js/form-validation.js"></script>
 </body>
 </html>
