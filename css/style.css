@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* *************** variables and general settings ************** */
 :root {
   --color-font-menu: #fff5e1;
@@ -545,8 +549,6 @@ body {
 }
 
 .form_input_fields {
-  display: flex;
-  flex-direction: column;
   padding-top: 3rem;
   align-content: center;
   align-items: center;
@@ -870,6 +872,17 @@ body {
   margin: auto;
   margin-top: 4rem;
   padding: 1.5rem;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.cntInfoPopup::-webkit-scrollbar {
+  display: none;
 }
 
 .btnClosePopup {

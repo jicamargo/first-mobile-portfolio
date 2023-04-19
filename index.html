@@ -120,11 +120,20 @@
     <div class="grid_text">
       <h4 class="ContactDescript">I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.</h4>
     </div>
-    <form action="https://formspree.io/f/xoqzkbpj" method="post">
+    <form id="contact-form" action="https://formspree.io/f/xoqzkbpj" method="post">
       <div class="form_input_fields">
-        <input class="input_field" type="text" name="full_name" placeholder="Full name" maxlength="30" required>
-        <input class="input_field" type="email" name="email" placeholder="Email address" required>
-        <textarea class="text_area" name="message" placeholder="Write me something" maxlength="500" required></textarea>        
+        <div class="field">
+          <input class="input_field" type="text" name="full_name" placeholder="Full name" maxlength="30" required>
+          <lblErrorMsg></lblErrorMsg>
+        </div>
+        <div class="field">
+          <input class="input_field" type="email" name="email" placeholder="Email address" required>
+          <lblErrorMsg></lblErrorMsg>
+        </div>
+        <div class="field">
+          <textarea class="text_area" name="message" placeholder="Write me something" maxlength="500" required></textarea>        
+          <lblErrorMsg></lblErrorMsg>
+        </div>
         <input class="SeeProjectBtn BtnClass project_btn_submit" type="submit" value="Get in touch"> 
       </div>
     </form>
@@ -143,7 +152,6 @@
     <div class="final-line">
     </div>
   </footer>
-
   <script src="js/menumobile.js"></script>
   <script src="js/project-cards.js"></script>
 </body>

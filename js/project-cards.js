@@ -144,6 +144,7 @@ for (let i = 0; i < arrWorks.length; i += 1) {
 
 function closeModal() {
   bodyDom.removeChild(popupContainer);
+  bodyDom.style.overflow = 'auto'; /* activate again the scrollbar for the body */
 }
 
 function visitSite(url) {
@@ -155,6 +156,8 @@ function visitSite(url) {
 
 function popupWindow(card) {
   bodyDom = document.getElementById('body');
+  bodyDom.style.overflow = 'hidden'; /* Hide scrollbar for the body */
+
   bodyDom.appendChild(document.createElement('div')).setAttribute('id', 'popupContainer');
   popupContainer = document.getElementById('popupContainer');
   popupContainer.style.width = '100%';
