@@ -1,8 +1,8 @@
 function showErrorMsg(inputElem, message) {
   const msg = inputElem.parentNode.querySelector('lblErrorMsg');
   if (message.trim() === '') {
-    message = "Sending your message..." ;
-    msg.style.color = "green" ;
+    message = 'Sending your message...';
+    msg.style.color = 'green';
   }
 
   msg.innerText = message;
