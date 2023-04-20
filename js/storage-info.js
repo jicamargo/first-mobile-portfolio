@@ -1,14 +1,38 @@
 // When the user changes the any input field, the data is saved to the local storage.
-// When loads the page, if there is any data in the local storage the input fields are pre-filled with this data.
+// When page loads, if there is any data in the local storage the input fields are
+// pre-filled with this data.
 
-let userInfo = {
-  name: ''
+function saveInfo() {
+  const form = document.getElementById('contact-form');
+  const infoUser = {
+    name: form.elements.full_name.value,
+    email: form.elements.email.value,
+    msg: form.elements.message.value,
+  };
+  const userInfoStr = JSON.stringify(infoUser);
+  localStorage.setItem('userInfo', userInfoStr);
 }
 
-let test = '{"name":"JOHN DOE", "email":"johndoe@gmail.com", "msg":"this is a test message"}';
-localStorage.setItem("userInfo", test);
+function getInfo() {
+  const userInfo = JSON.parse(localStorage.getItem('userInfo'));
 
+  if (userInfo) {
+    const form = document.getElementById('contact-form');
+    form.elements.full_name.value = userInfo.name;
+    form.elements.email.value = userInfo.email;
+    form.elements.message.value = userInfo.msg;
+  }
+}
 
-let getInfo = localStorage.getItem("userInfo");
+function setEvents() {
+  const form = document.getElementById('contact-form');
+  form.elements.full_name.addEventListener('change', saveInfo);
+  form.elements.email.addEventListener('change', saveInfo);
+  form.elements.message.addEventListener('change', saveInfo);
+}
 
-console.log(getInfo);
+/** ***** get user info when page loads ****** */
+getInfo();
+
+/** ***** get user info when page loads ****** */
+setEvents();

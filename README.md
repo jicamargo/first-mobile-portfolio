@@ -16,7 +16,7 @@
   - [⭐️ Key Features ](#️-key-features-)
   - [🚀 Live Demo ](#-live-demo-)
   - [💻 Getting Started ](#-getting-started-)
-    - [walkthrough video](#walkthrough-video)
+    - [Walkthrough Video](#walkthrough-video)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
@@ -50,9 +50,11 @@
 ## ⭐️ Key Features <a name="key-features"></a>
 
 - **["First mobile" design]**
-- **["Contact me form]**
+- **["Contact me form with data validation]**
 - **[Responsive Web Design]**
 - **[Animations and transitions]**
+- **["pop-up window to view project detail]**
+- **[Local storage of the user information]**
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- LIVE DEMO -->
