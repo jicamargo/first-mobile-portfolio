@@ -49,7 +49,6 @@ form.addEventListener('submit', (event) => {
     errMsg += 'valid email, ';
   }
 
-
   if (IsEmpty(form.elements.message)) {
     if (errMsg.trim() === '') {
       form.elements.message.focus();
