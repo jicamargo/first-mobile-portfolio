@@ -26,9 +26,9 @@ function getInfo() {
 
 function setEvents() {
   const form = document.getElementById('contact-form');
-  form.elements.full_name.addEventListener('change', saveInfo);
-  form.elements.email.addEventListener('change', saveInfo);
-  form.elements.message.addEventListener('change', saveInfo);
+  form.elements.full_name.addEventListener('input', saveInfo);
+  form.elements.email.addEventListener('input', saveInfo);
+  form.elements.message.addEventListener('input', saveInfo);
 }
 
 /** ***** get user info when page loads ****** */
