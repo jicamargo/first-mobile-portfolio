@@ -14,8 +14,6 @@ function IsEmpty(inputElem) {
 
 function invalidEmail(inputElem) {
   // validate email format
-  inputElem.value = inputElem.value.toLowerCase();
-
   const emailRegex = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   const email = inputElem.value.trim();
@@ -33,17 +31,25 @@ form.addEventListener('submit', (event) => {
     errMsg += 'name, ';
     form.elements.full_name.focus();
   }
+
   if (IsEmpty(form.elements.email)) {
     if (errMsg.trim() === '') {
       form.elements.email.focus();
     }
     errMsg += 'email, ';
+  } else if (!(form.elements.email.value.trim() === form.elements.email.value.toLowerCase())) {
+    if (errMsg.trim() === '') {
+      form.elements.email.focus();
+    }
+    errMsg += 'email in lowercase, ';
   } else if (invalidEmail(form.elements.email)) {
     if (errMsg.trim() === '') {
       form.elements.email.focus();
     }
     errMsg += 'valid email, ';
   }
+
+
   if (IsEmpty(form.elements.message)) {
     if (errMsg.trim() === '') {
       form.elements.message.focus();
