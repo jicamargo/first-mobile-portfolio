@@ -5,3 +5,10 @@ let userInfo = {
   name: ''
 }
 
+let prueba = '{"name":"PEPITO PEREZ", "email":"pepito@gmail.com","msg":"this is a testmessage"}';
+localStorage.setItem("userInfo", prueba);
+
+
+let getInfo = localStorage.getItem("userInfo");
+
+console.log(getInfo);
