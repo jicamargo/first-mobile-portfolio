@@ -1,61 +1,61 @@
-// show a message with a type of the inputElem
-function showMessage(inputElem, message, type) {
+function showErrorMsg(inputElem, message) {
   const msg = inputElem.parentNode.querySelector('lblErrorMsg');
-  msg.innerText = message;
-  // update the class for the inputElem
-  // inputElem.className = type ? 'success' : 'error';
-  return type;
-}
-
-function showError(inputElem, message) {
-  return showMessage(inputElem, message, false);
-}
-
-function showSuccess(inputElem) {
-  return showMessage(inputElem, '', true);
-}
-
-function VerifyNotEmpty(inputElem, FieldIsEmptyMsg) {
-  if (inputElem.value.trim() === '') {
-    return showError(inputElem, FieldIsEmptyMsg);
+  if (message.trim() === '') {
+    message = "Sending your message..." ;
+    msg.style.color = "green" ;
   }
-  return showSuccess(inputElem);
+
+  msg.innerText = message;
 }
 
-function validateEmail(inputElem, FieldIsEmptyMsg, invalidMsg) {
+function IsEmpty(inputElem) {
+  return (inputElem.value.trim() === '');
+}
+
+function invalidEmail(inputElem) {
+  // validate email format
   inputElem.value = inputElem.value.toLowerCase();
 
-  // check if the value is not empty
-  if (!VerifyNotEmpty(inputElem, FieldIsEmptyMsg)) {
-    return false;
-  }
-  // validate email format
-  const emailRegex = /^(([^<>()\[]\\.,;:\s@"]+(\.[^<>()\[]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  const emailRegex = /^(([^<>()\]\\.,;:\s@"]+(\.[^<>()\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
   const email = inputElem.value.trim();
-  if (!emailRegex.test(email)) {
-    return showError(inputElem, invalidMsg);
-  }
-  return true;
+  return !(emailRegex.test(email));
 }
 
 const form = document.getElementById('contact-form');
 
-const NAME_REQUIRED = 'Please enter your name';
-const EMAIL_REQUIRED = 'Please enter your email';
-const EMAIL_INVALID = 'Please enter a correct email address format';
-const MSG_REQUIRED = 'Please enter your message';
-
 form.addEventListener('submit', (event) => {
   event.preventDefault();
 
-  // validate fields
-  const nameValid = VerifyNotEmpty(form.elements.full_name, NAME_REQUIRED);
-  const emailValid = validateEmail(form.elements.email, EMAIL_REQUIRED, EMAIL_INVALID);
-  const msgValid = VerifyNotEmpty(form.elements.message, MSG_REQUIRED);
+  let errMsg = '';
 
-  // if valid, submit the form.
-  if (nameValid && emailValid && msgValid) {
+  if (IsEmpty(form.elements.full_name)) {
+    errMsg += 'name, ';
+    form.elements.full_name.focus();
+  }
+  if (IsEmpty(form.elements.email)) {
+    if (errMsg.trim() === '') {
+      form.elements.email.focus();
+    }
+    errMsg += 'email, ';
+  } else if (invalidEmail(form.elements.email)) {
+    if (errMsg.trim() === '') {
+      form.elements.email.focus();
+    }
+    errMsg += 'valid email, ';
+  }
+  if (IsEmpty(form.elements.message)) {
+    if (errMsg.trim() === '') {
+      form.elements.message.focus();
+    }
+    errMsg += 'message, ';
+  }
+
+  if (errMsg.trim() === '') {
+    showErrorMsg(form.elements.btnsubmit, '');
     form.submit();
+  } else {
+    errMsg = `Please enter your ${errMsg.slice(0, -2)}.`;
+    showErrorMsg(form.elements.btnsubmit, errMsg);
   }
 });
