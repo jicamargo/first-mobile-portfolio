@@ -5,28 +5,37 @@
 const arrWorks = [
   {
     id: 'project-0',
-    name: 'Multi-Post Stories',
+    name: 'Miami Music Weekend',
     name2: '',
-    ShortDescrip: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a standard dummy text.",
-    LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
+    ShortDescrip: 'Miami Music Weekend (MMW) is an engaging and visually captivating landing page dedicated to showcasing and promoting a vibrant Music Festival experience in Miami.',
+    LongDescrip: 'The Miami Music Weekend (MMW) project is a responsive webpage that provides an all-inclusive platform for music enthusiasts. The webpage showcases a comprehensive '
+                + 'list of events, including concerts, parties, and workshops, allowing users to explore and plan their itinerary. Additionally, it highlights special speakers invited '
+                + 'to the festival, offering unique insights and discussions on the music industry. Users can also delve into sub-events, such as after-parties or exclusive meet-and-greets, '
+                + 'to make the most of their MMW experience. With an array of options, the MMW project serves as a one-stop destination, ensuring attendees stay informed and engaged throughout '
+                + 'the exciting music-filled weekend.',
     featureImage: './images/card1_img.png',
-    alternateTextImage: 'header-main-project image.',
-    technologies: ['CSS', 'HTML', 'Boostrap', 'Ruby'],
-    liveVersion: 'https://jicamargo.github.io/first-mobile-portfolio/',
-    source: 'https://github.com/jicamargo/first-mobile-portfolio',
+    featureImage2: './images/snapshoot-mmw.png',
+    alternateTextImage: 'Miami Music Weekend project image.',
+    technologies: ['CSS', 'HTML', 'JavaScript'],
+    liveVersion: 'https://jicamargo.github.io/mmw/',
+    source: 'https://github.com/jicamargo/mmw',
   },
 
   {
     id: 'project-1',
-    name: 'Profesional Art 1',
-    name2: 'Printing Data',
-    ShortDescrip: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
-    LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    featureImage: '../images/snapshoot-project1.png',
-    alternateTextImage: 'secondary project ShortDescrip image.',
-    technologies: ['CSS', 'Boostrap', 'Ruby'],
-    liveVersion: 'https://jicamargo.github.io/first-mobile-portfolio/',
-    source: 'https://github.com/jicamargo/first-mobile-portfolio',
+    name: 'To do list',
+    name2: 'Minimalist To Do List',
+    ShortDescrip: 'A simple yet powerful tool that helps you stay organized and productive. With this app You can easily create tasks, edit, complete, and track your progress.',
+    LongDescrip: 'A simple yet powerful tool that helps you stay organized and productive. With this app You can easily create tasks, edit, complete, and track your progress.'
+    + '<br> This app offers several essential options to manage your tasks effectively. You can add new tasks by providing relevant details. The edit option allows you to modify '
+    + 'existing tasks easily. Deleting a single task is simple, and if you have completed tasks cluttering your list, you can delete all completed tasks at once. The ability to '
+    + "order tasks manually gives you control over their arrangement. Lastly, the project ensures that your data is preserved in local storage, so you won't lose any information even if you close or refresh the application.",
+    featureImage: './images/card2_img.png',
+    featureImage2: './images/snapshoot-todo.png',
+    alternateTextImage: 'To Do list project image.',
+    technologies: ['CSS', 'HTML', 'JavaScript', 'Webpack'],
+    liveVersion: 'https://jicamargo.github.io/todo/dist/',
+    source: 'https://github.com/jicamargo/todo',
   },
   {
     id: 'project-2',
@@ -34,7 +43,8 @@ const arrWorks = [
     name2: 'Printing Data',
     ShortDescrip: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    featureImage: '../images/snapshoot-project1.png',
+    featureImage: '../images/img-ph1.png',
+    featureImage2: '../images/snapshoot-project1.png',
     alternateTextImage: 'secondary project ShortDescrip image.',
     technologies: ['CSS', 'Boostrap', 'Ruby'],
     liveVersion: 'https://jicamargo.github.io/first-mobile-portfolio/',
@@ -47,6 +57,7 @@ const arrWorks = [
     ShortDescrip: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
     featureImage: '../images/snapshoot-project1.png',
+    featureImage2: '../images/snapshoot-project1.png',
     alternateTextImage: 'secondary project ShortDescrip image.',
     technologies: ['CSS', 'Boostrap', 'Ruby'],
     liveVersion: 'https://jicamargo.github.io/first-mobile-portfolio/',
@@ -58,7 +69,8 @@ const arrWorks = [
     name2: 'Printing Data',
     ShortDescrip: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    featureImage: '../images/snapshoot-project1.png',
+    featureImage: '../images/img-ph1.png',
+    featureImage2: '../images/snapshoot-project1.png',
     alternateTextImage: 'secondary project ShortDescrip image.',
     technologies: ['CSS', 'Boostrap', 'Ruby'],
     liveVersion: 'https://jicamargo.github.io/first-mobile-portfolio/',
@@ -70,7 +82,8 @@ const arrWorks = [
     name2: 'Printing Data',
     ShortDescrip: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    featureImage: '../images/snapshoot-project1.png',
+    featureImage: '../images/img-ph1.png',
+    featureImage2: '../images/snapshoot-project1.png',
     alternateTextImage: 'secondary project ShortDescrip image.',
     technologies: ['CSS', 'Boostrap', 'Ruby'],
     liveVersion: 'https://jicamargo.github.io/first-mobile-portfolio/',
@@ -82,7 +95,8 @@ const arrWorks = [
     name2: 'Printing Data',
     ShortDescrip: "A daily selection of privately personalized reads; no accounts or sign-ups required. has been the industry's standard.",
     LongDescrip: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent.",
-    featureImage: '../images/snapshoot-project1.png',
+    featureImage: '../images/img-ph1.png',
+    featureImage2: '../images/snapshoot-project1.png',
     alternateTextImage: 'secondary project ShortDescrip image.',
     technologies: ['CSS', 'Boostrap', 'Ruby'],
     liveVersion: 'https://jicamargo.github.io/first-mobile-portfolio/',
@@ -122,7 +136,7 @@ for (let i = 0; i < arrWorks.length; i += 1) {
   } else {
     div.classList = `sec_card_cnt work-${i}`;
     div.id = card.id;
-    div.style.background = ('linear-gradient(180deg, rgba(38, 38, 38, 5%) 0%, rgba(38, 38, 38, 0.9) 61.94%), url("./images/img-ph1.png") no-repeat center');
+    div.style.background = (`linear-gradient(180deg, rgba(38, 38, 38, 5%) 0%, rgba(38, 38, 38, 0.9) 61.94%), url("${card.featureImage}") no-repeat center`);
     div.innerHTML = `<span class="background-image" role="img" aria-label="${card.alternateTextImage}"></span>
         <div class="info_card">
         <div class="cnt_info_card">
@@ -186,7 +200,7 @@ function popupWindow(card) {
       
     <div class="popup-columns">
       <div class="popup-col1 popupImgCnt">
-        <img class="PopupImg" src="${card.featureImage}" alt="${card.alternateTextImage}">
+        <img class="PopupImg" src="${card.featureImage2}" alt="${card.alternateTextImage}">
       </div>
       <div class="popup-col2">
         <p class="PopupDescrip">${card.LongDescrip}</p>
