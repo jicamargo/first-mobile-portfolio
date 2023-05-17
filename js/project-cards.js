@@ -7,12 +7,12 @@ const arrWorks = [
     id: 'project-0',
     name: 'Miami Music Weekend',
     name2: '',
-    ShortDescrip: "Miami Music Weekend (MMW) is an engaging and visually captivating landing page dedicated to showcasing and promoting a vibrant Music Festival experience in Miami.",
-    LongDescrip: "The Miami Music Weekend (MMW) project is a responsive webpage that provides an all-inclusive platform for music enthusiasts. The webpage showcases a comprehensive " + 
-                "list of events, including concerts, parties, and workshops, allowing users to explore and plan their itinerary. Additionally, it highlights special speakers invited " + 
-                "to the festival, offering unique insights and discussions on the music industry. Users can also delve into sub-events, such as after-parties or exclusive meet-and-greets, " + 
-                "to make the most of their MMW experience. With an array of options, the MMW project serves as a one-stop destination, ensuring attendees stay informed and engaged throughout " + 
-                "the exciting music-filled weekend.",
+    ShortDescrip: 'Miami Music Weekend (MMW) is an engaging and visually captivating landing page dedicated to showcasing and promoting a vibrant Music Festival experience in Miami.',
+    LongDescrip: 'The Miami Music Weekend (MMW) project is a responsive webpage that provides an all-inclusive platform for music enthusiasts. The webpage showcases a comprehensive '
+                + 'list of events, including concerts, parties, and workshops, allowing users to explore and plan their itinerary. Additionally, it highlights special speakers invited '
+                + 'to the festival, offering unique insights and discussions on the music industry. Users can also delve into sub-events, such as after-parties or exclusive meet-and-greets, '
+                + 'to make the most of their MMW experience. With an array of options, the MMW project serves as a one-stop destination, ensuring attendees stay informed and engaged throughout '
+                + 'the exciting music-filled weekend.',
     featureImage: './images/card1_img.png',
     featureImage2: './images/snapshoot-mmw.png',
     alternateTextImage: 'Miami Music Weekend project image.',
@@ -25,11 +25,11 @@ const arrWorks = [
     id: 'project-1',
     name: 'To do list',
     name2: 'Minimalist To Do List',
-    ShortDescrip: "A simple yet powerful tool that helps you stay organized and productive. With this app You can easily create tasks, edit, complete, and track your progress.",
-    LongDescrip: "A simple yet powerful tool that helps you stay organized and productive. With this app You can easily create tasks, edit, complete, and track your progress." +
-    "<br> This app offers several essential options to manage your tasks effectively. You can add new tasks by providing relevant details. The edit option allows you to modify "+
-    "existing tasks easily. Deleting a single task is simple, and if you have completed tasks cluttering your list, you can delete all completed tasks at once. The ability to "+ 
-    "order tasks manually gives you control over their arrangement. Lastly, the project ensures that your data is preserved in local storage, so you won't lose any information even if you close or refresh the application.",
+    ShortDescrip: 'A simple yet powerful tool that helps you stay organized and productive. With this app You can easily create tasks, edit, complete, and track your progress.',
+    LongDescrip: 'A simple yet powerful tool that helps you stay organized and productive. With this app You can easily create tasks, edit, complete, and track your progress.'
+    + '<br> This app offers several essential options to manage your tasks effectively. You can add new tasks by providing relevant details. The edit option allows you to modify '
+    + 'existing tasks easily. Deleting a single task is simple, and if you have completed tasks cluttering your list, you can delete all completed tasks at once. The ability to '
+    + "order tasks manually gives you control over their arrangement. Lastly, the project ensures that your data is preserved in local storage, so you won't lose any information even if you close or refresh the application.",
     featureImage: './images/card2_img.png',
     featureImage2: './images/snapshoot-todo.png',
     alternateTextImage: 'To Do list project image.',
