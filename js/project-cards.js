@@ -136,17 +136,21 @@ for (let i = 0; i < arrWorks.length; i += 1) {
   } else {
     div.classList = `sec_card_cnt work-${i}`;
     div.id = card.id;
-    div.style.background = (`linear-gradient(180deg, rgba(38, 38, 38, 5%) 0%, rgba(38, 38, 38, 0.9) 61.94%), url("${card.featureImage}") no-repeat center`);
-    div.innerHTML = `<span class="background-image" role="img" aria-label="${card.alternateTextImage}"></span>
+    // div.style.background = (`url("${card.featureImage}") no-repeat center / cover`);
+    div.innerHTML = `
         <div class="info_card">
         <div class="cnt_info_card">
+          <div class="cnt_img_card">
+            <img class="card_cnt_img" src="${card.featureImage}" alt="${card.alternateTextImage}">
+          </div>
           <h1 class="Title1_card">${card.name}</h1>
           <h2 class="Title2_card">${card.name2}</h2>
           <p class="CardDescrip">${card.ShortDescrip}</p>
           <ul class="list_feat list_card_gral">${
-  card.technologies.map((tech) => `
+            card.technologies.map((tech) => `
             <li class="li_btn_2">${tech}</li>`).join(' ')
-}</ul>
+            }
+          </ul>
         </div> 
         <a id="btn-${card.id}" class="SeeProjectBtn project_btn_2 btnCard" href="#">See Project</a>
       </div>

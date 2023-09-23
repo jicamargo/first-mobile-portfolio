@@ -300,8 +300,11 @@ body {
   width: auto;
 }
 
-.main_card_cnt_img {
+.cnt_img_card {
   width: 100%;
+}
+.main_card_cnt_img {
+  width: 100%; 
 }
 
 .MainCardTitle {
